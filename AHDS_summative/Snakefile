@@ -74,6 +74,17 @@ rule clean_titles:
     script:
         "scripts/clean_titles.R"
 
+
+rule visualize_trends:
+    input:
+        "data/processed/cleaned_articles.tsv"
+    output:
+        "data/visualizations/word_trends.png"
+    script:
+        "scripts/visualize_trends.R"
+
+
+
 rule clean:
     "Clean up"
     shell: """
