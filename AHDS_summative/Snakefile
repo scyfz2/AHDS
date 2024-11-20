@@ -1,0 +1,64 @@
+import os
+
+configfile: "config/config.yaml"
+
+# Directories
+RAW_DIR = config["raw_dir"]
+ARTICLES_DIR = config["articles_dir"]
+
+# Keywords and parameters
+KEYWORD = config["keyword"].replace(" ", "%20")  # 替换空格为 URL 编码
+RETMAX = config["retmax"]
+
+# Rule: All
+rule all:
+    input:
+        os.path.join(RAW_DIR, "pmids.xml"),
+        expand(os.path.join(ARTICLES_DIR, "article-data-{pmid}.xml"), pmid=lambda wildcards: get_pmids())
+
+# Rule: Fetch PubMed IDs
+rule fetch_pmids:
+    output:
+        RAW_DIR + "/pmids.xml"
+    shell:
+        """
+        bash scripts/fetch_pmids.sh "{KEYWORD}" {RETMAX} "{RAW_DIR}/pmids.xml"
+        """
+
+# Rule: Fetch Articles
+rule fetch_articles:
+    input:
+        RAW_DIR + "/pmids.xml"
+    output:
+        ARTICLES_DIR + "/article-data-{pmid}.xml"
+    shell:
+        """
+        bash scripts/fetch_articles.sh "{wildcards.pmid}" "{ARTICLES_DIR}/article-data-{wildcards.pmid}.xml"
+        """
+
+# Helper function: Extract PMIDs from XML
+def get_pmids():
+    import xml.etree.ElementTree as ET
+    pmids_file = os.path.join(RAW_DIR, "pmids.xml")
+    tree = ET.parse(pmids_file)
+    root = tree.getroot()
+    return [id_elem.text for id_elem in root.findall(".//Id")]
+
+
+rule clean:
+    "Clean up"
+    shell: """
+    if [ -d data ]; then
+      rm -r data
+    else
+      echo directory data does not exist
+    fi
+    if [ -d results ]; then
+      rm -r results
+    else
+      echo directory results does not exist
+    fi
+    """
+
+
+

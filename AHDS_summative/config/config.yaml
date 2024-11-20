@@ -1,0 +1,4 @@
+keyword: "long COVID"                # 搜索关键词
+retmax: 10                        # 最大返回文章数
+raw_dir: "data/raw"                  # 存放原始数据的目录
+articles_dir: "data/articles"        # 存放文章详细信息的目录
