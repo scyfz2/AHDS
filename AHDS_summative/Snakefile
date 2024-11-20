@@ -5,16 +5,34 @@ configfile: "config/config.yaml"
 # Directories
 RAW_DIR = config["raw_dir"]
 ARTICLES_DIR = config["articles_dir"]
+PROCESSED_DIR = config["processed_dir"]
 
 # Keywords and parameters
 KEYWORD = config["keyword"].replace(" ", "%20")  # 替换空格为 URL 编码
 RETMAX = config["retmax"]
 
+# Helper function: Extract PMIDs from XML
+def get_pmids():
+    import xml.etree.ElementTree as ET
+    try:
+        pmids_file = os.path.join(RAW_DIR, "pmids.xml")
+        tree = ET.parse(pmids_file)
+        root = tree.getroot()
+        pmid_list = [id_elem.text for id_elem in root.findall(".//Id")]
+        if not pmid_list:
+            raise ValueError("No PMIDs found in pmids.xml")
+        return pmid_list
+    except Exception as e:
+        print(f"Error parsing PMIDs from {pmids_file}: {e}")
+        return []
+
 # Rule: All
 rule all:
     input:
-        os.path.join(RAW_DIR, "pmids.xml"),
+     os.path.join(RAW_DIR, "pmids.xml"),
         expand(os.path.join(ARTICLES_DIR, "article-data-{pmid}.xml"), pmid=lambda wildcards: get_pmids())
+
+        # os.path.join(PROCESSED_DIR, "articles.tsv")
 
 # Rule: Fetch PubMed IDs
 rule fetch_pmids:
@@ -22,7 +40,7 @@ rule fetch_pmids:
         RAW_DIR + "/pmids.xml"
     shell:
         """
-        bash scripts/fetch_pmids.sh "{KEYWORD}" {RETMAX} "{RAW_DIR}/pmids.xml"
+        bash scripts/fetch_pmids.sh '{KEYWORD}' {RETMAX} {output}
         """
 
 # Rule: Fetch Articles
@@ -33,17 +51,28 @@ rule fetch_articles:
         ARTICLES_DIR + "/article-data-{pmid}.xml"
     shell:
         """
-        bash scripts/fetch_articles.sh "{wildcards.pmid}" "{ARTICLES_DIR}/article-data-{wildcards.pmid}.xml"
+        bash scripts/fetch_articles.sh "{wildcards.pmid}" "{output}"
         """
 
-# Helper function: Extract PMIDs from XML
-def get_pmids():
-    import xml.etree.ElementTree as ET
-    pmids_file = os.path.join(RAW_DIR, "pmids.xml")
-    tree = ET.parse(pmids_file)
-    root = tree.getroot()
-    return [id_elem.text for id_elem in root.findall(".//Id")]
+# Rule: Process XML files into TSV
+rule process_articles:
+    input:
+        expand(os.path.join(ARTICLES_DIR, "article-data-{pmid}.xml"), pmid=get_pmids())
+    output:
+        os.path.join(PROCESSED_DIR, "articles.tsv")
+    shell:
+        """
+        Rscript scripts/process_articles.R {ARTICLES_DIR} {output}
+        """
 
+# Rule: Clean Titles using tidytext
+rule clean_titles:
+    input:
+        "data/processed/articles.tsv"
+    output:
+        "data/processed/cleaned_articles.tsv"
+    script:
+        "scripts/clean_titles.R"
 
 rule clean:
     "Clean up"
@@ -53,12 +82,9 @@ rule clean:
     else
       echo directory data does not exist
     fi
-    if [ -d results ]; then
-      rm -r results
+    if [ -d intermediates ]; then
+      rm -r intermediates
     else
-      echo directory results does not exist
+      echo directory intermediates does not exist
     fi
     """
-
-
-
