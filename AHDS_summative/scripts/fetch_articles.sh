@@ -7,7 +7,7 @@ OUTPUT_FILE=$2
 mkdir -p $(dirname "$OUTPUT_FILE")
 
 # Retry logic configuration
-RETRY_LIMIT=3         # Maximum number of retry attempts
+RETRY_LIMIT=5         # Maximum number of retry attempts
 RETRY_INTERVAL=5      # Wait time (in seconds) between retries
 
 # Function to fetch article metadata
