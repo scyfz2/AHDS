@@ -1,15 +1,18 @@
 import os
-
+from glob import glob
+# Load configuration file
 configfile: "config/config.yaml"
 
 # Directories
 RAW_DIR = config["raw_dir"]
 ARTICLES_DIR = config["articles_dir"]
 PROCESSED_DIR = config["processed_dir"]
+CLEAN_DIR = config["clean_dir"]
 
 # Keywords and parameters
-KEYWORD = config["keyword"].replace(" ", "%20")  # 替换空格为 URL 编码
+KEYWORD = config["keyword"].replace(" ", "%20")  # Replace spaces with URL encoding
 RETMAX = config["retmax"]
+
 
 # Helper function: Extract PMIDs from XML
 def get_pmids():
@@ -29,37 +32,30 @@ def get_pmids():
 # Rule: All
 rule all:
     input:
-     os.path.join(RAW_DIR, "pmids.xml"),
-        expand(os.path.join(ARTICLES_DIR, "article-data-{pmid}.xml"), pmid=lambda wildcards: get_pmids())
+        os.path.join(RAW_DIR, "pmids.xml"),
+        expand(os.path.join(ARTICLES_DIR, "article-data-{pmid}.xml"), pmid=get_pmids()),
+        os.path.join(PROCESSED_DIR, "articles.tsv"),
+        os.path.join(CLEAN_DIR, "cleaned_articles.tsv")
 
-        # os.path.join(PROCESSED_DIR, "articles.tsv")
 
-# Rule: Fetch PubMed IDs
-rule fetch_pmids:
+# Rule: fetch data
+rule fetch_data:
     output:
-        RAW_DIR + "/pmids.xml"
+        os.path.join(RAW_DIR, "pmids.xml"),
+        "logs/fetch_data.log"
     shell:
         """
-        bash scripts/fetch_pmids.sh '{KEYWORD}' {RETMAX} {output}
-        """
-
-# Rule: Fetch Articles
-rule fetch_articles:
-    input:
-        RAW_DIR + "/pmids.xml"
-    output:
-        ARTICLES_DIR + "/article-data-{pmid}.xml"
-    shell:
-        """
-        bash scripts/fetch_articles.sh "{wildcards.pmid}" "{output}"
+        bash scripts/fetch_data.sh '{KEYWORD}' {RETMAX} {RAW_DIR} {ARTICLES_DIR}
         """
 
 # Rule: Process XML files into TSV
 rule process_articles:
     input:
+        f"logs/fetch_data.log",
         expand(os.path.join(ARTICLES_DIR, "article-data-{pmid}.xml"), pmid=get_pmids())
     output:
-        os.path.join(PROCESSED_DIR, "articles.tsv")
+        os.path.join(PROCESSED_DIR, "articles.tsv"),
+        "logs/process_articles.log"
     shell:
         """
         Rscript scripts/process_articles.R {ARTICLES_DIR} {output}
@@ -68,11 +64,13 @@ rule process_articles:
 # Rule: Clean Titles using tidytext
 rule clean_titles:
     input:
-        "data/processed/articles.tsv"
+        f"logs/process_articles.log",
+        os.path.join(PROCESSED_DIR, "articles.tsv")
     output:
-        "data/processed/cleaned_articles.tsv"
+        os.path.join(CLEAN_DIR, "cleaned_articles.tsv"),
+        "logs/clean_titles.log"
     script:
-        "scripts/clean_titles.R"
+        "scripts/clean_titles.R" 
 
 
 rule visualize_trends:
@@ -84,7 +82,7 @@ rule visualize_trends:
         "scripts/visualize_trends.R"
 
 
-
+# Rule: remove data and logs directory
 rule clean:
     "Clean up"
     shell: """
@@ -93,9 +91,9 @@ rule clean:
     else
       echo directory data does not exist
     fi
-    if [ -d intermediates ]; then
-      rm -r intermediates
+    if [ -d logs ]; then
+      rm -r logs
     else
-      echo directory intermediates does not exist
+      echo directory logs does not exist
     fi
     """
