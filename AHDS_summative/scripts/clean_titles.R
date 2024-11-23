@@ -31,10 +31,10 @@ tryCatch({
     anti_join(stop_words, by = "word") %>%
     # Remove digits: Exclude numbers from the word list
     filter(!str_detect(word, "^[0-9]+$")) %>%
-    # 去除嵌入数字的单词（如 "COVID19" -> "COVID"）
+    # Remove words with embedded numbers (e.g. "COVID-19" -> "COVID")
     mutate(word = str_remove_all(word, "[0-9]")) %>%
-    filter(word != "") %>%  # 移除因去除数字后变为空的单词
-    # 去除仅由标点符号组成的“单词”（如 "." 或 ".."）
+    filter(word != "") %>%  
+    # Remove "words" that consist only of punctuation marks (such as "." or "..") )
     filter(!str_detect(word, "^[[:punct:]]+$")) %>%
     # Apply stemming: Reduce words to their root form (e.g., "running" -> "run")
     mutate(word = SnowballC::wordStem(word)) %>%

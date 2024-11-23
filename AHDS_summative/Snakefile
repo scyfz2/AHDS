@@ -14,28 +14,18 @@ KEYWORD = config["keyword"].replace(" ", "%20")  # Replace spaces with URL encod
 RETMAX = config["retmax"]
 
 
-# Helper function: Extract PMIDs from XML
-def get_pmids():
-    import xml.etree.ElementTree as ET
-    try:
-        pmids_file = os.path.join(RAW_DIR, "pmids.xml")
-        tree = ET.parse(pmids_file)
-        root = tree.getroot()
-        pmid_list = [id_elem.text for id_elem in root.findall(".//Id")]
-        if not pmid_list:
-            raise ValueError("No PMIDs found in pmids.xml")
-        return pmid_list
-    except Exception as e:
-        print(f"Error parsing PMIDs from {pmids_file}: {e}")
-        return []
-
 # Rule: All
 rule all:
     input:
         os.path.join(RAW_DIR, "pmids.xml"),
-        expand(os.path.join(ARTICLES_DIR, "article-data-{pmid}.xml"), pmid=get_pmids()),
         os.path.join(PROCESSED_DIR, "articles.tsv"),
-        os.path.join(CLEAN_DIR, "cleaned_articles.tsv")
+        os.path.join(CLEAN_DIR, "cleaned_articles.tsv"),
+        "plots/Top_Terms_Excluding_COVID.png",
+        "plots/Top_Terms_with_COVID.png",
+        "plots/Word_Frequency_Trends_2019-2026.png",
+        "plots/Thematic_Word_Frequency_Trends_2019-2026.png"
+
+
 
 
 # Rule: fetch data
@@ -48,18 +38,35 @@ rule fetch_data:
         bash scripts/fetch_data.sh '{KEYWORD}' {RETMAX} {RAW_DIR} {ARTICLES_DIR}
         """
 
+# Helper function: Extract PMIDs from XML
+def get_pmids(pmids_file):
+    import xml.etree.ElementTree as ET
+    try:
+        tree = ET.parse(pmids_file)
+        root = tree.getroot()
+        pmid_list = [id_elem.text for id_elem in root.findall(".//Id")]
+        if not pmid_list:
+            raise ValueError("No PMIDs found in pmids.xml")
+        return pmid_list
+    except Exception as e:
+        print(f"Error parsing PMIDs from {pmids_file}: {e}")
+        return []
+
+
 # Rule: Process XML files into TSV
 rule process_articles:
     input:
         f"logs/fetch_data.log",
-        expand(os.path.join(ARTICLES_DIR, "article-data-{pmid}.xml"), pmid=get_pmids())
+        pmids_xml = os.path.join(RAW_DIR, "pmids.xml")  # Ensure pmids.xml is ready
     output:
         os.path.join(PROCESSED_DIR, "articles.tsv"),
         "logs/process_articles.log"
-    shell:
-        """
-        Rscript scripts/process_articles.R {ARTICLES_DIR} {output}
-        """
+    run:
+        pmid_list = get_pmids(input.pmids_xml)  # Call get_pmids here
+        shell("""
+            Rscript scripts/process_articles.R {ARTICLES_DIR} {output[0]}
+        """)
+
 
 # Rule: Clean Titles using tidytext
 rule clean_titles:
@@ -73,13 +80,25 @@ rule clean_titles:
         "scripts/clean_titles.R" 
 
 
-rule visualize_trends:
+# Rule: Word Frequency Analysis
+rule word_frequency:
     input:
-        "data/processed/cleaned_articles.tsv"
+        os.path.join(CLEAN_DIR, "cleaned_articles.tsv")
     output:
-        "data/visualizations/word_trends.png"
+        "plots/Word_Frequency_Trends_2019-2026.png",
+        "plots/Thematic_Word_Frequency_Trends_2019-2026.png"
     script:
-        "scripts/visualize_trends.R"
+        "scripts/word_frequency.R"
+
+# Rule: LDA Topic Modeling
+rule LDA:
+    input:
+        os.path.join(CLEAN_DIR, "cleaned_articles.tsv")
+    output:
+        "plots/Top_Terms_Excluding_COVID.png",
+        "plots/Top_Terms_with_COVID.png"
+    script:
+        "scripts/LDA.R"
 
 
 # Rule: remove data and logs directory
@@ -95,5 +114,21 @@ rule clean:
       rm -r logs
     else
       echo directory logs does not exist
+    fi
+    if [ -d plots ]; then
+      rm -r plots
+    else
+      echo directory plots does not exist
+    fi
+    """
+
+# Rule: remove plots directory
+rule cleanplot:
+    "Clean plot"
+    shell: """
+    if [ -d plots ]; then
+      rm -r plots
+    else
+      echo directory plots does not exist
     fi
     """

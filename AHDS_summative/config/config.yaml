@@ -1,5 +1,5 @@
 keyword: "long covid"                # 搜索关键词
-retmax: 30                        # 最大返回文章数
+retmax: 16                        # 最大返回文章数
 raw_dir: "data/raw/pmids"                  # 存放原始数据的目录
 articles_dir: "data/raw/articles"        # 存放文章详细信息的目录
 processed_dir: "data/raw/processed"       # 存放处理后XML文件的输出目录

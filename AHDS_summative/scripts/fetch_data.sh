@@ -50,18 +50,18 @@ fi
 
 # Download metadata for each PMID
 echo "Downloading metadata for articles..."
-total_pmids=$(echo "$PMID_LIST" | wc -w) # 计算总的PMID数量
-current_count=0 # 初始化计数器
+total_pmids=$(echo "$PMID_LIST" | wc -w) 
+current_count=0 
 
 for PMID in $PMID_LIST; do
     METADATA_FILE="${ARTICLES_DIR}/article-data-${PMID}.xml"
     current_count=$((current_count + 1))
     
-    # 计算和显示进度
+    # Calculate and display progress
     progress=$((current_count * 100 / total_pmids))
     echo -ne "Progress: $progress% ($current_count/$total_pmids)\r"
 
-    # 下载文件
+    # Download file
     if curl -s --progress-bar "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=$PMID" -o "$METADATA_FILE"; then
         echo "Metadata saved: $METADATA_FILE"
     else
