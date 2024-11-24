@@ -1,0 +1,39 @@
+host: Fan
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 16
+Rules claiming more threads will be scaled down.
+Job stats:
+job            count
+-----------  -------
+all                1
+fetch_pmids        1
+total              2
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 16:33:25 2024]
+localrule fetch_pmids:
+    output: data/raw/pmids.xml
+    jobid: 1
+    reason: Missing output files: data/raw/pmids.xml
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 16:33:25 2024]
+Finished job 1.
+1 of 2 steps (50%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 16:33:25 2024]
+localrule all:
+    input: data/raw/pmids.xml
+    jobid: 0
+    reason: Input files updated by another job: data/raw/pmids.xml
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 16:33:25 2024]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: .snakemake/log/2024-11-20T163325.410223.snakemake.log

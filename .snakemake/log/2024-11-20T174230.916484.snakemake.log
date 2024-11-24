@@ -1,0 +1,36 @@
+host: Fan
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 16
+Rules claiming more threads will be scaled down.
+Job stats:
+job                 count
+----------------  -------
+visualize_trends        1
+total                   1
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 17:42:30 2024]
+localrule visualize_trends:
+    input: data/processed/cleaned_articles.tsv
+    output: data/visualizations/word_trends.png
+    jobid: 0
+    reason: Missing output files: data/visualizations/word_trends.png
+    resources: tmpdir=/tmp
+
+RuleException:
+CalledProcessError in file /home/fan/Applied_HD/AHDS_summative/Snakefile, line 84:
+Command 'set -euo pipefail;  Rscript --vanilla /home/fan/Applied_HD/AHDS_summative/.snakemake/scripts/tmp2gbhbctl.visualize_trends.R' returned non-zero exit status 1.
+[Wed Nov 20 17:42:33 2024]
+Error in rule visualize_trends:
+    jobid: 0
+    input: data/processed/cleaned_articles.tsv
+    output: data/visualizations/word_trends.png
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-11-20T174230.916484.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

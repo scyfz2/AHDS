@@ -1,0 +1,4488 @@
+host: Fan
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 16
+Rules claiming more threads will be scaled down.
+Job stats:
+job               count
+--------------  -------
+all                   1
+fetch_articles      300
+total               301
+
+Select jobs to execute...
+Execute 16 jobs...
+
+[Wed Nov 20 22:03:34 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39560821.xml
+    jobid: 3
+    reason: Missing output files: data/articles/article-data-39560821.xml
+    wildcards: pmid=39560821
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 22:03:34 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39512484.xml
+    jobid: 63
+    reason: Missing output files: data/articles/article-data-39512484.xml
+    wildcards: pmid=39512484
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 22:03:34 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39469684.xml
+    jobid: 123
+    reason: Missing output files: data/articles/article-data-39469684.xml
+    wildcards: pmid=39469684
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 22:03:34 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39363376.xml
+    jobid: 265
+    reason: Missing output files: data/articles/article-data-39363376.xml
+    wildcards: pmid=39363376
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 22:03:34 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39482218.xml
+    jobid: 110
+    reason: Missing output files: data/articles/article-data-39482218.xml
+    wildcards: pmid=39482218
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 22:03:34 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39527314.xml
+    jobid: 50
+    reason: Missing output files: data/articles/article-data-39527314.xml
+    wildcards: pmid=39527314
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 22:03:34 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39550693.xml
+    jobid: 20
+    reason: Missing output files: data/articles/article-data-39550693.xml
+    wildcards: pmid=39550693
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 22:03:34 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39499692.xml
+    jobid: 80
+    reason: Missing output files: data/articles/article-data-39499692.xml
+    wildcards: pmid=39499692
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 22:03:34 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39454992.xml
+    jobid: 140
+    reason: Missing output files: data/articles/article-data-39454992.xml
+    wildcards: pmid=39454992
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 22:03:34 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39434281.xml
+    jobid: 170
+    reason: Missing output files: data/articles/article-data-39434281.xml
+    wildcards: pmid=39434281
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 22:03:34 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39416495.xml
+    jobid: 200
+    reason: Missing output files: data/articles/article-data-39416495.xml
+    wildcards: pmid=39416495
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 22:03:34 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39388619.xml
+    jobid: 230
+    reason: Missing output files: data/articles/article-data-39388619.xml
+    wildcards: pmid=39388619
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 22:03:34 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39367848.xml
+    jobid: 260
+    reason: Missing output files: data/articles/article-data-39367848.xml
+    wildcards: pmid=39367848
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 22:03:34 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39348850.xml
+    jobid: 290
+    reason: Missing output files: data/articles/article-data-39348850.xml
+    wildcards: pmid=39348850
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 22:03:34 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39490617.xml
+    jobid: 93
+    reason: Missing output files: data/articles/article-data-39490617.xml
+    wildcards: pmid=39490617
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 22:03:34 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39536123.xml
+    jobid: 33
+    reason: Missing output files: data/articles/article-data-39536123.xml
+    wildcards: pmid=39536123
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:03:38 2024]
+Finished job 265.
+1 of 301 steps (0.3%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:03:38 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39371163.xml
+    jobid: 252
+    reason: Missing output files: data/articles/article-data-39371163.xml
+    wildcards: pmid=39371163
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:03:38 2024]
+Finished job 50.
+2 of 301 steps (1%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:03:38 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39352145.xml
+    jobid: 282
+    reason: Missing output files: data/articles/article-data-39352145.xml
+    wildcards: pmid=39352145
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:03:38 2024]
+Finished job 110.
+3 of 301 steps (1%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:03:38 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39518964.xml
+    jobid: 55
+    reason: Missing output files: data/articles/article-data-39518964.xml
+    wildcards: pmid=39518964
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:03:41 2024]
+Finished job 282.
+4 of 301 steps (1%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:03:41 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39477428.xml
+    jobid: 115
+    reason: Missing output files: data/articles/article-data-39477428.xml
+    wildcards: pmid=39477428
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:03:41 2024]
+Finished job 252.
+5 of 301 steps (2%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:03:41 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39451477.xml
+    jobid: 143
+    reason: Missing output files: data/articles/article-data-39451477.xml
+    wildcards: pmid=39451477
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:03:41 2024]
+Finished job 55.
+6 of 301 steps (2%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:03:41 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39433942.xml
+    jobid: 173
+    reason: Missing output files: data/articles/article-data-39433942.xml
+    wildcards: pmid=39433942
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:03:43 2024]
+Finished job 230.
+7 of 301 steps (2%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:03:43 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39478809.xml
+    jobid: 113
+    reason: Missing output files: data/articles/article-data-39478809.xml
+    wildcards: pmid=39478809
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:03:43 2024]
+Finished job 93.
+8 of 301 steps (3%) done
+[Wed Nov 20 22:03:43 2024]
+Finished job 170.
+9 of 301 steps (3%) done
+[Wed Nov 20 22:03:43 2024]
+Finished job 63.
+10 of 301 steps (3%) done
+Select jobs to execute...
+Execute 3 jobs...
+
+[Wed Nov 20 22:03:43 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39558292.xml
+    jobid: 8
+    reason: Missing output files: data/articles/article-data-39558292.xml
+    wildcards: pmid=39558292
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 22:03:43 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39524261.xml
+    jobid: 46
+    reason: Missing output files: data/articles/article-data-39524261.xml
+    wildcards: pmid=39524261
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 22:03:43 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39444797.xml
+    jobid: 153
+    reason: Missing output files: data/articles/article-data-39444797.xml
+    wildcards: pmid=39444797
+    resources: tmpdir=/tmp
+
+Select jobs to execute...
+Waiting for more resources.
+Waiting for more resources.
+[Wed Nov 20 22:03:44 2024]
+Finished job 115.
+11 of 301 steps (4%) done
+Execute 1 jobs...
+
+[Wed Nov 20 22:03:44 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39409138.xml
+    jobid: 203
+    reason: Missing output files: data/articles/article-data-39409138.xml
+    wildcards: pmid=39409138
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:03:45 2024]
+Finished job 173.
+12 of 301 steps (4%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:03:45 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39385068.xml
+    jobid: 233
+    reason: Missing output files: data/articles/article-data-39385068.xml
+    wildcards: pmid=39385068
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:03:45 2024]
+Finished job 143.
+13 of 301 steps (4%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:03:45 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39520983.xml
+    jobid: 53
+    reason: Missing output files: data/articles/article-data-39520983.xml
+    wildcards: pmid=39520983
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:03:46 2024]
+Finished job 46.
+14 of 301 steps (5%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:03:46 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39365220.xml
+    jobid: 263
+    reason: Missing output files: data/articles/article-data-39365220.xml
+    wildcards: pmid=39365220
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:03:46 2024]
+Finished job 8.
+15 of 301 steps (5%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:03:46 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39550783.xml
+    jobid: 19
+    reason: Missing output files: data/articles/article-data-39550783.xml
+    wildcards: pmid=39550783
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:03:46 2024]
+Finished job 113.
+16 of 301 steps (5%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:03:46 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39499751.xml
+    jobid: 79
+    reason: Missing output files: data/articles/article-data-39499751.xml
+    wildcards: pmid=39499751
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:03:46 2024]
+Finished job 153.
+17 of 301 steps (6%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:03:46 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39482903.xml
+    jobid: 109
+    reason: Missing output files: data/articles/article-data-39482903.xml
+    wildcards: pmid=39482903
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:03:48 2024]
+Finished job 140.
+18 of 301 steps (6%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:03:48 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39434919.xml
+    jobid: 169
+    reason: Missing output files: data/articles/article-data-39434919.xml
+    wildcards: pmid=39434919
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:03:48 2024]
+Finished job 20.
+19 of 301 steps (6%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:03:48 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39389388.xml
+    jobid: 229
+    reason: Missing output files: data/articles/article-data-39389388.xml
+    wildcards: pmid=39389388
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:03:48 2024]
+Finished job 203.
+20 of 301 steps (7%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:03:48 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39349473.xml
+    jobid: 289
+    reason: Missing output files: data/articles/article-data-39349473.xml
+    wildcards: pmid=39349473
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:03:48 2024]
+Finished job 200.
+21 of 301 steps (7%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:03:48 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39529266.xml
+    jobid: 49
+    reason: Missing output files: data/articles/article-data-39529266.xml
+    wildcards: pmid=39529266
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:03:50 2024]
+Finished job 79.
+22 of 301 steps (7%) done
+[Wed Nov 20 22:03:50 2024]
+Finished job 19.
+23 of 301 steps (8%) done
+Select jobs to execute...
+Execute 2 jobs...
+
+[Wed Nov 20 22:03:50 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39379779.xml
+    jobid: 243
+    reason: Missing output files: data/articles/article-data-39379779.xml
+    wildcards: pmid=39379779
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 22:03:50 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39390854.xml
+    jobid: 226
+    reason: Missing output files: data/articles/article-data-39390854.xml
+    wildcards: pmid=39390854
+    resources: tmpdir=/tmp
+
+Select jobs to execute...
+Waiting for more resources.
+[Wed Nov 20 22:03:50 2024]
+Finished job 109.
+24 of 301 steps (8%) done
+Execute 1 jobs...
+
+[Wed Nov 20 22:03:50 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39356507.xml
+    jobid: 276
+    reason: Missing output files: data/articles/article-data-39356507.xml
+    wildcards: pmid=39356507
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:03:51 2024]
+Finished job 263.
+25 of 301 steps (8%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:03:51 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39376493.xml
+    jobid: 246
+    reason: Missing output files: data/articles/article-data-39376493.xml
+    wildcards: pmid=39376493
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:03:51 2024]
+Finished job 169.
+26 of 301 steps (9%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:03:51 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39455248.xml
+    jobid: 139
+    reason: Missing output files: data/articles/article-data-39455248.xml
+    wildcards: pmid=39455248
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:03:52 2024]
+Finished job 229.
+27 of 301 steps (9%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:03:52 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39417642.xml
+    jobid: 199
+    reason: Missing output files: data/articles/article-data-39417642.xml
+    wildcards: pmid=39417642
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:03:53 2024]
+Finished job 290.
+28 of 301 steps (9%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:03:53 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39368535.xml
+    jobid: 259
+    reason: Missing output files: data/articles/article-data-39368535.xml
+    wildcards: pmid=39368535
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:03:53 2024]
+Finished job 260.
+29 of 301 steps (10%) done
+[Wed Nov 20 22:03:53 2024]
+Finished job 33.
+30 of 301 steps (10%) done
+[Wed Nov 20 22:03:53 2024]
+Finished job 80.
+31 of 301 steps (10%) done
+[Wed Nov 20 22:03:53 2024]
+Finished job 3.
+32 of 301 steps (11%) done
+Select jobs to execute...
+Execute 4 jobs...
+
+[Wed Nov 20 22:03:53 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39510792.xml
+    jobid: 68
+    reason: Missing output files: data/articles/article-data-39510792.xml
+    wildcards: pmid=39510792
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 22:03:53 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39399920.xml
+    jobid: 213
+    reason: Missing output files: data/articles/article-data-39399920.xml
+    wildcards: pmid=39399920
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 22:03:53 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39374820.xml
+    jobid: 247
+    reason: Missing output files: data/articles/article-data-39374820.xml
+    wildcards: pmid=39374820
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 22:03:53 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39355045.xml
+    jobid: 277
+    reason: Missing output files: data/articles/article-data-39355045.xml
+    wildcards: pmid=39355045
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:03:53 2024]
+Finished job 123.
+33 of 301 steps (11%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:03:53 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39424264.xml
+    jobid: 186
+    reason: Missing output files: data/articles/article-data-39424264.xml
+    wildcards: pmid=39424264
+    resources: tmpdir=/tmp
+
+Select jobs to execute...
+Waiting for more resources.
+Waiting for more resources.
+Waiting for more resources.
+[Wed Nov 20 22:03:53 2024]
+Finished job 226.
+34 of 301 steps (11%) done
+Execute 1 jobs...
+
+[Wed Nov 20 22:03:53 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39396825.xml
+    jobid: 216
+    reason: Missing output files: data/articles/article-data-39396825.xml
+    wildcards: pmid=39396825
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:03:53 2024]
+Finished job 243.
+35 of 301 steps (12%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:03:53 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39536394.xml
+    jobid: 32
+    reason: Missing output files: data/articles/article-data-39536394.xml
+    wildcards: pmid=39536394
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:03:54 2024]
+Finished job 276.
+36 of 301 steps (12%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:03:54 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39491570.xml
+    jobid: 92
+    reason: Missing output files: data/articles/article-data-39491570.xml
+    wildcards: pmid=39491570
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:03:54 2024]
+Finished job 246.
+37 of 301 steps (12%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:03:54 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39443935.xml
+    jobid: 156
+    reason: Missing output files: data/articles/article-data-39443935.xml
+    wildcards: pmid=39443935
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:03:55 2024]
+Finished job 139.
+38 of 301 steps (13%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:03:55 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39445814.xml
+    jobid: 152
+    reason: Missing output files: data/articles/article-data-39445814.xml
+    wildcards: pmid=39445814
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:03:55 2024]
+Finished job 199.
+39 of 301 steps (13%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:03:55 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39468090.xml
+    jobid: 126
+    reason: Missing output files: data/articles/article-data-39468090.xml
+    wildcards: pmid=39468090
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:03:56 2024]
+Finished job 259.
+40 of 301 steps (13%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:03:56 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39399934.xml
+    jobid: 212
+    reason: Missing output files: data/articles/article-data-39399934.xml
+    wildcards: pmid=39399934
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:03:56 2024]
+Finished job 247.
+41 of 301 steps (14%) done
+[Wed Nov 20 22:03:56 2024]
+Finished job 213.
+42 of 301 steps (14%) done
+Select jobs to execute...
+Execute 2 jobs...
+
+[Wed Nov 20 22:03:56 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39551951.xml
+    jobid: 16
+    reason: Missing output files: data/articles/article-data-39551951.xml
+    wildcards: pmid=39551951
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 22:03:56 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39388147.xml
+    jobid: 218
+    reason: Missing output files: data/articles/article-data-39388147.xml
+    wildcards: pmid=39388147
+    resources: tmpdir=/tmp
+
+Select jobs to execute...
+Waiting for more resources.
+[Wed Nov 20 22:03:56 2024]
+Finished job 277.
+43 of 301 steps (14%) done
+Execute 1 jobs...
+
+[Wed Nov 20 22:03:56 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39430651.xml
+    jobid: 175
+    reason: Missing output files: data/articles/article-data-39430651.xml
+    wildcards: pmid=39430651
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:03:58 2024]
+Finished job 156.
+44 of 301 steps (15%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:03:58 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39382809.xml
+    jobid: 235
+    reason: Missing output files: data/articles/article-data-39382809.xml
+    wildcards: pmid=39382809
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:03:58 2024]
+Finished job 152.
+45 of 301 steps (15%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:03:58 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39515869.xml
+    jobid: 62
+    reason: Missing output files: data/articles/article-data-39515869.xml
+    wildcards: pmid=39515869
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:03:58 2024]
+Finished job 126.
+46 of 301 steps (15%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:03:58 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39471195.xml
+    jobid: 122
+    reason: Missing output files: data/articles/article-data-39471195.xml
+    wildcards: pmid=39471195
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:03:59 2024]
+Finished job 233.
+47 of 301 steps (16%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:03:59 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39562810.xml
+    jobid: 2
+    reason: Missing output files: data/articles/article-data-39562810.xml
+    wildcards: pmid=39562810
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:00 2024]
+Finished job 212.
+48 of 301 steps (16%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:00 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39426876.xml
+    jobid: 182
+    reason: Missing output files: data/articles/article-data-39426876.xml
+    wildcards: pmid=39426876
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:00 2024]
+Finished job 16.
+49 of 301 steps (16%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:00 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39358543.xml
+    jobid: 272
+    reason: Missing output files: data/articles/article-data-39358543.xml
+    wildcards: pmid=39358543
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:00 2024]
+Finished job 218.
+50 of 301 steps (17%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:00 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39379918.xml
+    jobid: 242
+    reason: Missing output files: data/articles/article-data-39379918.xml
+    wildcards: pmid=39379918
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:01 2024]
+Finished job 235.
+51 of 301 steps (17%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:01 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39504683.xml
+    jobid: 75
+    reason: Missing output files: data/articles/article-data-39504683.xml
+    wildcards: pmid=39504683
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:02 2024]
+Finished job 62.
+52 of 301 steps (17%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:02 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39552393.xml
+    jobid: 15
+    reason: Missing output files: data/articles/article-data-39552393.xml
+    wildcards: pmid=39552393
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:02 2024]
+Finished job 68.
+53 of 301 steps (18%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:02 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39489522.xml
+    jobid: 96
+    reason: Missing output files: data/articles/article-data-39489522.xml
+    wildcards: pmid=39489522
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:02 2024]
+Finished job 2.
+54 of 301 steps (18%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:02 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39457266.xml
+    jobid: 135
+    reason: Missing output files: data/articles/article-data-39457266.xml
+    wildcards: pmid=39457266
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:03 2024]
+Finished job 182.
+55 of 301 steps (18%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:03 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39536120.xml
+    jobid: 36
+    reason: Missing output files: data/articles/article-data-39536120.xml
+    wildcards: pmid=39536120
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:03 2024]
+Finished job 242.
+56 of 301 steps (19%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:03 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39418956.xml
+    jobid: 195
+    reason: Missing output files: data/articles/article-data-39418956.xml
+    wildcards: pmid=39418956
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:04 2024]
+Finished job 53.
+57 of 301 steps (19%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:04 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39511082.xml
+    jobid: 66
+    reason: Missing output files: data/articles/article-data-39511082.xml
+    wildcards: pmid=39511082
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:04 2024]
+Finished job 272.
+58 of 301 steps (19%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:04 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39369845.xml
+    jobid: 255
+    reason: Missing output files: data/articles/article-data-39369845.xml
+    wildcards: pmid=39369845
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:04 2024]
+Finished job 75.
+59 of 301 steps (20%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:04 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39524607.xml
+    jobid: 45
+    reason: Missing output files: data/articles/article-data-39524607.xml
+    wildcards: pmid=39524607
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:05 2024]
+Finished job 15.
+60 of 301 steps (20%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:05 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39488359.xml
+    jobid: 105
+    reason: Missing output files: data/articles/article-data-39488359.xml
+    wildcards: pmid=39488359
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:06 2024]
+Finished job 135.
+61 of 301 steps (20%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:06 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39559556.xml
+    jobid: 6
+    reason: Missing output files: data/articles/article-data-39559556.xml
+    wildcards: pmid=39559556
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:06 2024]
+Finished job 36.
+62 of 301 steps (21%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:06 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39435694.xml
+    jobid: 165
+    reason: Missing output files: data/articles/article-data-39435694.xml
+    wildcards: pmid=39435694
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:07 2024]
+Finished job 195.
+63 of 301 steps (21%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:07 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39346769.xml
+    jobid: 293
+    reason: Missing output files: data/articles/article-data-39346769.xml
+    wildcards: pmid=39346769
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:07 2024]
+Finished job 186.
+64 of 301 steps (21%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:07 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39391317.xml
+    jobid: 225
+    reason: Missing output files: data/articles/article-data-39391317.xml
+    wildcards: pmid=39391317
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:07 2024]
+Finished job 49.
+65 of 301 steps (22%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:07 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39497519.xml
+    jobid: 83
+    reason: Missing output files: data/articles/article-data-39497519.xml
+    wildcards: pmid=39497519
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:07 2024]
+Finished job 289.
+66 of 301 steps (22%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:07 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39350082.xml
+    jobid: 285
+    reason: Missing output files: data/articles/article-data-39350082.xml
+    wildcards: pmid=39350082
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:08 2024]
+Finished job 255.
+67 of 301 steps (22%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:08 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39516956.xml
+    jobid: 58
+    reason: Missing output files: data/articles/article-data-39516956.xml
+    wildcards: pmid=39516956
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:08 2024]
+Finished job 45.
+68 of 301 steps (23%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:08 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39474148.xml
+    jobid: 118
+    reason: Missing output files: data/articles/article-data-39474148.xml
+    wildcards: pmid=39474148
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:08 2024]
+Finished job 105.
+69 of 301 steps (23%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:08 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39549783.xml
+    jobid: 23
+    reason: Missing output files: data/articles/article-data-39549783.xml
+    wildcards: pmid=39549783
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:09 2024]
+Finished job 6.
+70 of 301 steps (23%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:09 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39429741.xml
+    jobid: 178
+    reason: Missing output files: data/articles/article-data-39429741.xml
+    wildcards: pmid=39429741
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:10 2024]
+Finished job 165.
+71 of 301 steps (24%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:10 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39392098.xml
+    jobid: 222
+    reason: Missing output files: data/articles/article-data-39392098.xml
+    wildcards: pmid=39392098
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:10 2024]
+Finished job 293.
+72 of 301 steps (24%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:10 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39345136.xml
+    jobid: 295
+    reason: Missing output files: data/articles/article-data-39345136.xml
+    wildcards: pmid=39345136
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:10 2024]
+Finished job 225.
+73 of 301 steps (24%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:10 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39340624.xml
+    jobid: 298
+    reason: Missing output files: data/articles/article-data-39340624.xml
+    wildcards: pmid=39340624
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:11 2024]
+Finished job 58.
+74 of 301 steps (25%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:11 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39542232.xml
+    jobid: 28
+    reason: Missing output files: data/articles/article-data-39542232.xml
+    wildcards: pmid=39542232
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:11 2024]
+Finished job 118.
+75 of 301 steps (25%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:11 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39495479.xml
+    jobid: 88
+    reason: Missing output files: data/articles/article-data-39495479.xml
+    wildcards: pmid=39495479
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:12 2024]
+Finished job 23.
+76 of 301 steps (25%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:12 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39447830.xml
+    jobid: 148
+    reason: Missing output files: data/articles/article-data-39447830.xml
+    wildcards: pmid=39447830
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:12 2024]
+Finished job 216.
+77 of 301 steps (26%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:12 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39381546.xml
+    jobid: 238
+    reason: Missing output files: data/articles/article-data-39381546.xml
+    wildcards: pmid=39381546
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:12 2024]
+Finished job 32.
+78 of 301 steps (26%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:12 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39402206.xml
+    jobid: 208
+    reason: Missing output files: data/articles/article-data-39402206.xml
+    wildcards: pmid=39402206
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:12 2024]
+Finished job 66.
+79 of 301 steps (26%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:12 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39354320.xml
+    jobid: 280
+    reason: Missing output files: data/articles/article-data-39354320.xml
+    wildcards: pmid=39354320
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:13 2024]
+Finished job 122.
+80 of 301 steps (27%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:13 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39360869.xml
+    jobid: 268
+    reason: Missing output files: data/articles/article-data-39360869.xml
+    wildcards: pmid=39360869
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:13 2024]
+Finished job 178.
+81 of 301 steps (27%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:13 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39372835.xml
+    jobid: 250
+    reason: Missing output files: data/articles/article-data-39372835.xml
+    wildcards: pmid=39372835
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:13 2024]
+Finished job 92.
+82 of 301 steps (27%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:13 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39534771.xml
+    jobid: 41
+    reason: Missing output files: data/articles/article-data-39534771.xml
+    wildcards: pmid=39534771
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:14 2024]
+Finished job 295.
+83 of 301 steps (28%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:14 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39489514.xml
+    jobid: 101
+    reason: Missing output files: data/articles/article-data-39489514.xml
+    wildcards: pmid=39489514
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:14 2024]
+Finished job 298.
+84 of 301 steps (28%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:14 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39438144.xml
+    jobid: 161
+    reason: Missing output files: data/articles/article-data-39438144.xml
+    wildcards: pmid=39438144
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:14 2024]
+Finished job 28.
+85 of 301 steps (28%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:14 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39392878.xml
+    jobid: 220
+    reason: Missing output files: data/articles/article-data-39392878.xml
+    wildcards: pmid=39392878
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:15 2024]
+Finished job 88.
+86 of 301 steps (29%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:15 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39392635.xml
+    jobid: 221
+    reason: Missing output files: data/articles/article-data-39392635.xml
+    wildcards: pmid=39392635
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:15 2024]
+Finished job 148.
+87 of 301 steps (29%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:15 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39421860.xml
+    jobid: 190
+    reason: Missing output files: data/articles/article-data-39421860.xml
+    wildcards: pmid=39421860
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:15 2024]
+Finished job 175.
+88 of 301 steps (29%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:15 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39352725.xml
+    jobid: 281
+    reason: Missing output files: data/articles/article-data-39352725.xml
+    wildcards: pmid=39352725
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:16 2024]
+Finished job 96.
+89 of 301 steps (30%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:16 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39438198.xml
+    jobid: 160
+    reason: Missing output files: data/articles/article-data-39438198.xml
+    wildcards: pmid=39438198
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:16 2024]
+Finished job 280.
+90 of 301 steps (30%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:16 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39557089.xml
+    jobid: 11
+    reason: Missing output files: data/articles/article-data-39557089.xml
+    wildcards: pmid=39557089
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:16 2024]
+Finished job 41.
+91 of 301 steps (30%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:16 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39507661.xml
+    jobid: 71
+    reason: Missing output files: data/articles/article-data-39507661.xml
+    wildcards: pmid=39507661
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:17 2024]
+Finished job 101.
+92 of 301 steps (31%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:17 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39458187.xml
+    jobid: 131
+    reason: Missing output files: data/articles/article-data-39458187.xml
+    wildcards: pmid=39458187
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:17 2024]
+Finished job 161.
+93 of 301 steps (31%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:17 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39459041.xml
+    jobid: 130
+    reason: Missing output files: data/articles/article-data-39459041.xml
+    wildcards: pmid=39459041
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:18 2024]
+Finished job 220.
+94 of 301 steps (31%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:18 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39420307.xml
+    jobid: 191
+    reason: Missing output files: data/articles/article-data-39420307.xml
+    wildcards: pmid=39420307
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:18 2024]
+Finished job 221.
+95 of 301 steps (32%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:18 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39508631.xml
+    jobid: 70
+    reason: Missing output files: data/articles/article-data-39508631.xml
+    wildcards: pmid=39508631
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:19 2024]
+Finished job 190.
+96 of 301 steps (32%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:19 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39372136.xml
+    jobid: 251
+    reason: Missing output files: data/articles/article-data-39372136.xml
+    wildcards: pmid=39372136
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:19 2024]
+Finished job 160.
+97 of 301 steps (32%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:19 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39557995.xml
+    jobid: 10
+    reason: Missing output files: data/articles/article-data-39557995.xml
+    wildcards: pmid=39557995
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:20 2024]
+Finished job 71.
+98 of 301 steps (33%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:20 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39547729.xml
+    jobid: 24
+    reason: Missing output files: data/articles/article-data-39547729.xml
+    wildcards: pmid=39547729
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:20 2024]
+Finished job 131.
+99 of 301 steps (33%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:20 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39497076.xml
+    jobid: 84
+    reason: Missing output files: data/articles/article-data-39497076.xml
+    wildcards: pmid=39497076
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:21 2024]
+Finished job 238.
+100 of 301 steps (33%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:21 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39450880.xml
+    jobid: 144
+    reason: Missing output files: data/articles/article-data-39450880.xml
+    wildcards: pmid=39450880
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:21 2024]
+Finished job 208.
+101 of 301 steps (34%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:21 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39419616.xml
+    jobid: 192
+    reason: Missing output files: data/articles/article-data-39419616.xml
+    wildcards: pmid=39419616
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:22 2024]
+Finished job 70.
+102 of 301 steps (34%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:22 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39545965.xml
+    jobid: 25
+    reason: Missing output files: data/articles/article-data-39545965.xml
+    wildcards: pmid=39545965
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:22 2024]
+Finished job 251.
+103 of 301 steps (34%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:22 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39364804.xml
+    jobid: 264
+    reason: Missing output files: data/articles/article-data-39364804.xml
+    wildcards: pmid=39364804
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:23 2024]
+Finished job 10.
+104 of 301 steps (35%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:23 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39520297.xml
+    jobid: 54
+    reason: Missing output files: data/articles/article-data-39520297.xml
+    wildcards: pmid=39520297
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:23 2024]
+Finished job 24.
+105 of 301 steps (35%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:23 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39407877.xml
+    jobid: 204
+    reason: Missing output files: data/articles/article-data-39407877.xml
+    wildcards: pmid=39407877
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:24 2024]
+Finished job 222.
+106 of 301 steps (35%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:24 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39478711.xml
+    jobid: 114
+    reason: Missing output files: data/articles/article-data-39478711.xml
+    wildcards: pmid=39478711
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:24 2024]
+Finished job 84.
+107 of 301 steps (36%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:24 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39433402.xml
+    jobid: 174
+    reason: Missing output files: data/articles/article-data-39433402.xml
+    wildcards: pmid=39433402
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:24 2024]
+Finished job 281.
+108 of 301 steps (36%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:24 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39384321.xml
+    jobid: 234
+    reason: Missing output files: data/articles/article-data-39384321.xml
+    wildcards: pmid=39384321
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:25 2024]
+Finished job 25.
+109 of 301 steps (36%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:25 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39489515.xml
+    jobid: 100
+    reason: Missing output files: data/articles/article-data-39489515.xml
+    wildcards: pmid=39489515
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:26 2024]
+Finished job 264.
+110 of 301 steps (37%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:26 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39345344.xml
+    jobid: 294
+    reason: Missing output files: data/articles/article-data-39345344.xml
+    wildcards: pmid=39345344
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:26 2024]
+Finished job 83.
+111 of 301 steps (37%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:26 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39534773.xml
+    jobid: 40
+    reason: Missing output files: data/articles/article-data-39534773.xml
+    wildcards: pmid=39534773
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:26 2024]
+Finished job 54.
+112 of 301 steps (37%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:26 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39558820.xml
+    jobid: 7
+    reason: Missing output files: data/articles/article-data-39558820.xml
+    wildcards: pmid=39558820
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:26 2024]
+Finished job 285.
+113 of 301 steps (38%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:26 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39342666.xml
+    jobid: 297
+    reason: Missing output files: data/articles/article-data-39342666.xml
+    wildcards: pmid=39342666
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:26 2024]
+Finished job 204.
+114 of 301 steps (38%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:26 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39510798.xml
+    jobid: 67
+    reason: Missing output files: data/articles/article-data-39510798.xml
+    wildcards: pmid=39510798
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:27 2024]
+Finished job 191.
+115 of 301 steps (38%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:27 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39465803.xml
+    jobid: 127
+    reason: Missing output files: data/articles/article-data-39465803.xml
+    wildcards: pmid=39465803
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:27 2024]
+Finished job 114.
+116 of 301 steps (39%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:27 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39423876.xml
+    jobid: 187
+    reason: Missing output files: data/articles/article-data-39423876.xml
+    wildcards: pmid=39423876
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:27 2024]
+Finished job 174.
+117 of 301 steps (39%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:27 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39382470.xml
+    jobid: 237
+    reason: Missing output files: data/articles/article-data-39382470.xml
+    wildcards: pmid=39382470
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:29 2024]
+Finished job 100.
+118 of 301 steps (39%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:29 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39536118.xml
+    jobid: 37
+    reason: Missing output files: data/articles/article-data-39536118.xml
+    wildcards: pmid=39536118
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:29 2024]
+Finished job 294.
+119 of 301 steps (40%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:29 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39429966.xml
+    jobid: 177
+    reason: Missing output files: data/articles/article-data-39429966.xml
+    wildcards: pmid=39429966
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:29 2024]
+Finished job 40.
+120 of 301 steps (40%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:29 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39489520.xml
+    jobid: 97
+    reason: Missing output files: data/articles/article-data-39489520.xml
+    wildcards: pmid=39489520
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:30 2024]
+Finished job 67.
+121 of 301 steps (40%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:30 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39361124.xml
+    jobid: 267
+    reason: Missing output files: data/articles/article-data-39361124.xml
+    wildcards: pmid=39361124
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:30 2024]
+Finished job 11.
+122 of 301 steps (41%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:30 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39441526.xml
+    jobid: 157
+    reason: Missing output files: data/articles/article-data-39441526.xml
+    wildcards: pmid=39441526
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:31 2024]
+Finished job 187.
+123 of 301 steps (41%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:31 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39395470.xml
+    jobid: 217
+    reason: Missing output files: data/articles/article-data-39395470.xml
+    wildcards: pmid=39395470
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:31 2024]
+Finished job 237.
+124 of 301 steps (41%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:31 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39358535.xml
+    jobid: 273
+    reason: Missing output files: data/articles/article-data-39358535.xml
+    wildcards: pmid=39358535
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:31 2024]
+Finished job 130.
+125 of 301 steps (42%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:31 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39402811.xml
+    jobid: 207
+    reason: Missing output files: data/articles/article-data-39402811.xml
+    wildcards: pmid=39402811
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:31 2024]
+Finished job 268.
+126 of 301 steps (42%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:31 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39426837.xml
+    jobid: 183
+    reason: Missing output files: data/articles/article-data-39426837.xml
+    wildcards: pmid=39426837
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:31 2024]
+Finished job 250.
+127 of 301 steps (42%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:31 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39449018.xml
+    jobid: 147
+    reason: Missing output files: data/articles/article-data-39449018.xml
+    wildcards: pmid=39449018
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:32 2024]
+Finished job 177.
+128 of 301 steps (43%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:32 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39500939.xml
+    jobid: 76
+    reason: Missing output files: data/articles/article-data-39500939.xml
+    wildcards: pmid=39500939
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:33 2024]
+Finished job 97.
+129 of 301 steps (43%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:33 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39457567.xml
+    jobid: 132
+    reason: Missing output files: data/articles/article-data-39457567.xml
+    wildcards: pmid=39457567
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:33 2024]
+Finished job 234.
+130 of 301 steps (43%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:33 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39497009.xml
+    jobid: 85
+    reason: Missing output files: data/articles/article-data-39497009.xml
+    wildcards: pmid=39497009
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:34 2024]
+Finished job 217.
+131 of 301 steps (44%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:34 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39450181.xml
+    jobid: 145
+    reason: Missing output files: data/articles/article-data-39450181.xml
+    wildcards: pmid=39450181
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:34 2024]
+Finished job 273.
+132 of 301 steps (44%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:34 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39404791.xml
+    jobid: 205
+    reason: Missing output files: data/articles/article-data-39404791.xml
+    wildcards: pmid=39404791
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:35 2024]
+Finished job 144.
+133 of 301 steps (44%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:35 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39435656.xml
+    jobid: 166
+    reason: Missing output files: data/articles/article-data-39435656.xml
+    wildcards: pmid=39435656
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:35 2024]
+Finished job 127.
+134 of 301 steps (45%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:35 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39349924.xml
+    jobid: 286
+    reason: Missing output files: data/articles/article-data-39349924.xml
+    wildcards: pmid=39349924
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:36 2024]
+Finished job 76.
+135 of 301 steps (45%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:36 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39488240.xml
+    jobid: 106
+    reason: Missing output files: data/articles/article-data-39488240.xml
+    wildcards: pmid=39488240
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:36 2024]
+Finished job 132.
+136 of 301 steps (45%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:36 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39369712.xml
+    jobid: 256
+    reason: Missing output files: data/articles/article-data-39369712.xml
+    wildcards: pmid=39369712
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:37 2024]
+Finished job 145.
+137 of 301 steps (46%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:38 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39418782.xml
+    jobid: 196
+    reason: Missing output files: data/articles/article-data-39418782.xml
+    wildcards: pmid=39418782
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:38 2024]
+Finished job 205.
+138 of 301 steps (46%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:38 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39536117.xml
+    jobid: 38
+    reason: Missing output files: data/articles/article-data-39536117.xml
+    wildcards: pmid=39536117
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:38 2024]
+Finished job 166.
+139 of 301 steps (46%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:38 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39438966.xml
+    jobid: 158
+    reason: Missing output files: data/articles/article-data-39438966.xml
+    wildcards: pmid=39438966
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:39 2024]
+Finished job 286.
+140 of 301 steps (47%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:39 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39374592.xml
+    jobid: 248
+    reason: Missing output files: data/articles/article-data-39374592.xml
+    wildcards: pmid=39374592
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:39 2024]
+Finished job 106.
+141 of 301 steps (47%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:39 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39464351.xml
+    jobid: 128
+    reason: Missing output files: data/articles/article-data-39464351.xml
+    wildcards: pmid=39464351
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:40 2024]
+Finished job 192.
+142 of 301 steps (47%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:40 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39415747.xml
+    jobid: 201
+    reason: Missing output files: data/articles/article-data-39415747.xml; Code has changed since last execution
+    wildcards: pmid=39415747
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:40 2024]
+Finished job 256.
+143 of 301 steps (48%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:40 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39550105.xml
+    jobid: 21
+    reason: Missing output files: data/articles/article-data-39550105.xml
+    wildcards: pmid=39550105
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:40 2024]
+Finished job 7.
+144 of 301 steps (48%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:40 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39454250.xml
+    jobid: 141
+    reason: Missing output files: data/articles/article-data-39454250.xml
+    wildcards: pmid=39454250
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:41 2024]
+Finished job 196.
+145 of 301 steps (48%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:41 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39367278.xml
+    jobid: 261
+    reason: Missing output files: data/articles/article-data-39367278.xml
+    wildcards: pmid=39367278
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:41 2024]
+Finished job 38.
+146 of 301 steps (49%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:41 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39381125.xml
+    jobid: 239
+    reason: Missing output files: data/articles/article-data-39381125.xml
+    wildcards: pmid=39381125
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:42 2024]
+Finished job 85.
+147 of 301 steps (49%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:42 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39434179.xml
+    jobid: 171
+    reason: Missing output files: data/articles/article-data-39434179.xml
+    wildcards: pmid=39434179
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:42 2024]
+Finished job 248.
+148 of 301 steps (49%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:42 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39348500.xml
+    jobid: 291
+    reason: Missing output files: data/articles/article-data-39348500.xml
+    wildcards: pmid=39348500
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:43 2024]
+Finished job 128.
+149 of 301 steps (50%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:43 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39560319.xml
+    jobid: 4
+    reason: Missing output files: data/articles/article-data-39560319.xml
+    wildcards: pmid=39560319
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:43 2024]
+Finished job 201.
+150 of 301 steps (50%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:43 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39469144.xml
+    jobid: 124
+    reason: Missing output files: data/articles/article-data-39469144.xml
+    wildcards: pmid=39469144
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:43 2024]
+Finished job 21.
+151 of 301 steps (50%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:43 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39436613.xml
+    jobid: 162
+    reason: Missing output files: data/articles/article-data-39436613.xml
+    wildcards: pmid=39436613
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:45 2024]
+Finished job 239.
+152 of 301 steps (50%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:45 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39489519.xml
+    jobid: 98
+    reason: Missing output files: data/articles/article-data-39489519.xml
+    wildcards: pmid=39489519
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:45 2024]
+Finished job 261.
+153 of 301 steps (51%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:45 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39543596.xml
+    jobid: 27
+    reason: Missing output files: data/articles/article-data-39543596.xml
+    wildcards: pmid=39543596
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:45 2024]
+Finished job 297.
+154 of 301 steps (51%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:45 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39496183.xml
+    jobid: 87
+    reason: Missing output files: data/articles/article-data-39496183.xml
+    wildcards: pmid=39496183
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:45 2024]
+Finished job 171.
+155 of 301 steps (51%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:45 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39456822.xml
+    jobid: 136
+    reason: Missing output files: data/articles/article-data-39456822.xml
+    wildcards: pmid=39456822
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:46 2024]
+Finished job 4.
+156 of 301 steps (52%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:46 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39354691.xml
+    jobid: 278
+    reason: Missing output files: data/articles/article-data-39354691.xml
+    wildcards: pmid=39354691
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:46 2024]
+Finished job 124.
+157 of 301 steps (52%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:46 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39423759.xml
+    jobid: 188
+    reason: Missing output files: data/articles/article-data-39423759.xml
+    wildcards: pmid=39423759
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:46 2024]
+Finished job 162.
+158 of 301 steps (52%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:46 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39522688.xml
+    jobid: 51
+    reason: Missing output files: data/articles/article-data-39522688.xml
+    wildcards: pmid=39522688
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:48 2024]
+Finished job 98.
+159 of 301 steps (53%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:48 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39386803.xml
+    jobid: 231
+    reason: Missing output files: data/articles/article-data-39386803.xml
+    wildcards: pmid=39386803
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:48 2024]
+Finished job 27.
+160 of 301 steps (53%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:48 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39425101.xml
+    jobid: 184
+    reason: Missing output files: data/articles/article-data-39425101.xml
+    wildcards: pmid=39425101
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:48 2024]
+Finished job 87.
+161 of 301 steps (53%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:48 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39379681.xml
+    jobid: 244
+    reason: Missing output files: data/articles/article-data-39379681.xml
+    wildcards: pmid=39379681
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:49 2024]
+Finished job 267.
+162 of 301 steps (54%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:49 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39444752.xml
+    jobid: 154
+    reason: Missing output files: data/articles/article-data-39444752.xml
+    wildcards: pmid=39444752
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:49 2024]
+Finished job 157.
+163 of 301 steps (54%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:49 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39357795.xml
+    jobid: 274
+    reason: Missing output files: data/articles/article-data-39357795.xml
+    wildcards: pmid=39357795
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:49 2024]
+Finished job 37.
+164 of 301 steps (54%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:49 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39349781.xml
+    jobid: 287
+    reason: Missing output files: data/articles/article-data-39349781.xml
+    wildcards: pmid=39349781
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:50 2024]
+Finished job 278.
+165 of 301 steps (55%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:50 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39532773.xml
+    jobid: 47
+    reason: Missing output files: data/articles/article-data-39532773.xml
+    wildcards: pmid=39532773
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:50 2024]
+Finished job 188.
+166 of 301 steps (55%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:50 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39339976.xml
+    jobid: 299
+    reason: Missing output files: data/articles/article-data-39339976.xml
+    wildcards: pmid=39339976
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:50 2024]
+Finished job 51.
+167 of 301 steps (55%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:50 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39551591.xml
+    jobid: 17
+    reason: Missing output files: data/articles/article-data-39551591.xml
+    wildcards: pmid=39551591
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:50 2024]
+Finished job 207.
+168 of 301 steps (56%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:50 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39456253.xml
+    jobid: 137
+    reason: Missing output files: data/articles/article-data-39456253.xml
+    wildcards: pmid=39456253
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:50 2024]
+Finished job 183.
+169 of 301 steps (56%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:50 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39418080.xml
+    jobid: 197
+    reason: Missing output files: data/articles/article-data-39418080.xml
+    wildcards: pmid=39418080
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:50 2024]
+Finished job 147.
+170 of 301 steps (56%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:50 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39390853.xml
+    jobid: 227
+    reason: Missing output files: data/articles/article-data-39390853.xml
+    wildcards: pmid=39390853
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:51 2024]
+Finished job 291.
+171 of 301 steps (57%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:51 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39446164.xml
+    jobid: 150
+    reason: Missing output files: data/articles/article-data-39446164.xml
+    wildcards: pmid=39446164
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:52 2024]
+Finished job 231.
+172 of 301 steps (57%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:52 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39380657.xml
+    jobid: 240
+    reason: Missing output files: data/articles/article-data-39380657.xml
+    wildcards: pmid=39380657
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:52 2024]
+Finished job 184.
+173 of 301 steps (57%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:52 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39338165.xml
+    jobid: 300
+    reason: Missing output files: data/articles/article-data-39338165.xml
+    wildcards: pmid=39338165
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:52 2024]
+Finished job 274.
+174 of 301 steps (58%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:52 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39516528.xml
+    jobid: 60
+    reason: Missing output files: data/articles/article-data-39516528.xml
+    wildcards: pmid=39516528
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:52 2024]
+Finished job 154.
+175 of 301 steps (58%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:52 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39493249.xml
+    jobid: 90
+    reason: Missing output files: data/articles/article-data-39493249.xml
+    wildcards: pmid=39493249
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:53 2024]
+Finished job 47.
+176 of 301 steps (58%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:53 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39554298.xml
+    jobid: 13
+    reason: Missing output files: data/articles/article-data-39554298.xml
+    wildcards: pmid=39554298
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:53 2024]
+Finished job 299.
+177 of 301 steps (59%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:53 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39507087.xml
+    jobid: 73
+    reason: Missing output files: data/articles/article-data-39507087.xml
+    wildcards: pmid=39507087
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:53 2024]
+Finished job 17.
+178 of 301 steps (59%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:53 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39419470.xml
+    jobid: 193
+    reason: Missing output files: data/articles/article-data-39419470.xml
+    wildcards: pmid=39419470
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:54 2024]
+Finished job 150.
+179 of 301 steps (59%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:54 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39526116.xml
+    jobid: 43
+    reason: Missing output files: data/articles/article-data-39526116.xml
+    wildcards: pmid=39526116
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:55 2024]
+Finished job 300.
+180 of 301 steps (60%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:55 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39516880.xml
+    jobid: 59
+    reason: Missing output files: data/articles/article-data-39516880.xml
+    wildcards: pmid=39516880
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:55 2024]
+Finished job 240.
+181 of 301 steps (60%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:55 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39473828.xml
+    jobid: 119
+    reason: Missing output files: data/articles/article-data-39473828.xml
+    wildcards: pmid=39473828
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:55 2024]
+Finished job 60.
+182 of 301 steps (60%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:55 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39351379.xml
+    jobid: 283
+    reason: Missing output files: data/articles/article-data-39351379.xml
+    wildcards: pmid=39351379
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:57 2024]
+Finished job 13.
+183 of 301 steps (61%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:57 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39475394.xml
+    jobid: 116
+    reason: Missing output files: data/articles/article-data-39475394.xml
+    wildcards: pmid=39475394
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:57 2024]
+Finished job 73.
+184 of 301 steps (61%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:57 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39361178.xml
+    jobid: 266
+    reason: Missing output files: data/articles/article-data-39361178.xml
+    wildcards: pmid=39361178
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:57 2024]
+Finished job 158.
+185 of 301 steps (61%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:57 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39403255.xml
+    jobid: 206
+    reason: Missing output files: data/articles/article-data-39403255.xml
+    wildcards: pmid=39403255
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:57 2024]
+Finished job 193.
+186 of 301 steps (62%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:57 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39449339.xml
+    jobid: 146
+    reason: Missing output files: data/articles/article-data-39449339.xml
+    wildcards: pmid=39449339
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:58 2024]
+Finished job 43.
+187 of 301 steps (62%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:58 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39496842.xml
+    jobid: 86
+    reason: Missing output files: data/articles/article-data-39496842.xml
+    wildcards: pmid=39496842
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:59 2024]
+Finished job 59.
+188 of 301 steps (62%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:59 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39544193.xml
+    jobid: 26
+    reason: Missing output files: data/articles/article-data-39544193.xml
+    wildcards: pmid=39544193
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:59 2024]
+Finished job 119.
+189 of 301 steps (63%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:59 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39430594.xml
+    jobid: 176
+    reason: Missing output files: data/articles/article-data-39430594.xml
+    wildcards: pmid=39430594
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:59 2024]
+Finished job 141.
+190 of 301 steps (63%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:59 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39382736.xml
+    jobid: 236
+    reason: Missing output files: data/articles/article-data-39382736.xml
+    wildcards: pmid=39382736
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:04:59 2024]
+Finished job 283.
+191 of 301 steps (63%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:04:59 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39343334.xml
+    jobid: 296
+    reason: Missing output files: data/articles/article-data-39343334.xml
+    wildcards: pmid=39343334
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:00 2024]
+Finished job 116.
+192 of 301 steps (64%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:00 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39536116.xml
+    jobid: 39
+    reason: Missing output files: data/articles/article-data-39536116.xml
+    wildcards: pmid=39536116
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:00 2024]
+Finished job 266.
+193 of 301 steps (64%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:00 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39518632.xml
+    jobid: 56
+    reason: Missing output files: data/articles/article-data-39518632.xml
+    wildcards: pmid=39518632
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:00 2024]
+Finished job 206.
+194 of 301 steps (64%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:00 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39489518.xml
+    jobid: 99
+    reason: Missing output files: data/articles/article-data-39489518.xml
+    wildcards: pmid=39489518
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:01 2024]
+Finished job 86.
+195 of 301 steps (65%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:01 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39438926.xml
+    jobid: 159
+    reason: Missing output files: data/articles/article-data-39438926.xml
+    wildcards: pmid=39438926
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:02 2024]
+Finished job 176.
+196 of 301 steps (65%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:02 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39393059.xml
+    jobid: 219
+    reason: Missing output files: data/articles/article-data-39393059.xml
+    wildcards: pmid=39393059
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:02 2024]
+Finished job 236.
+197 of 301 steps (65%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:02 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39540209.xml
+    jobid: 29
+    reason: Missing output files: data/articles/article-data-39540209.xml
+    wildcards: pmid=39540209
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:02 2024]
+Finished job 296.
+198 of 301 steps (66%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:02 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39402205.xml
+    jobid: 209
+    reason: Missing output files: data/articles/article-data-39402205.xml
+    wildcards: pmid=39402205
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:02 2024]
+Finished job 244.
+199 of 301 steps (66%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:02 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39360535.xml
+    jobid: 269
+    reason: Missing output files: data/articles/article-data-39360535.xml
+    wildcards: pmid=39360535
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:03 2024]
+Finished job 39.
+200 of 301 steps (66%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:03 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39556251.xml
+    jobid: 12
+    reason: Missing output files: data/articles/article-data-39556251.xml
+    wildcards: pmid=39556251
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:04 2024]
+Finished job 56.
+201 of 301 steps (67%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:04 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39459851.xml
+    jobid: 129
+    reason: Missing output files: data/articles/article-data-39459851.xml
+    wildcards: pmid=39459851
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:04 2024]
+Finished job 99.
+202 of 301 steps (67%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:04 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39423742.xml
+    jobid: 189
+    reason: Missing output files: data/articles/article-data-39423742.xml
+    wildcards: pmid=39423742
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:04 2024]
+Finished job 136.
+203 of 301 steps (67%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:04 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39374300.xml
+    jobid: 249
+    reason: Missing output files: data/articles/article-data-39374300.xml
+    wildcards: pmid=39374300
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:05 2024]
+Finished job 159.
+204 of 301 steps (68%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:05 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39415455.xml
+    jobid: 202
+    reason: Missing output files: data/articles/article-data-39415455.xml; Code has changed since last execution
+    wildcards: pmid=39415455
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:06 2024]
+Finished job 219.
+205 of 301 steps (68%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:06 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39510073.xml
+    jobid: 69
+    reason: Missing output files: data/articles/article-data-39510073.xml
+    wildcards: pmid=39510073
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:06 2024]
+Finished job 146.
+206 of 301 steps (68%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:06 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39549937.xml
+    jobid: 22
+    reason: Missing output files: data/articles/article-data-39549937.xml
+    wildcards: pmid=39549937
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:06 2024]
+Finished job 90.
+207 of 301 steps (69%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:06 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39497750.xml
+    jobid: 82
+    reason: Missing output files: data/articles/article-data-39497750.xml
+    wildcards: pmid=39497750
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:07 2024]
+Finished job 12.
+208 of 301 steps (69%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:07 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39451987.xml
+    jobid: 142
+    reason: Missing output files: data/articles/article-data-39451987.xml
+    wildcards: pmid=39451987
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:07 2024]
+Finished job 189.
+209 of 301 steps (69%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:07 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39433997.xml
+    jobid: 172
+    reason: Missing output files: data/articles/article-data-39433997.xml
+    wildcards: pmid=39433997
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:07 2024]
+Finished job 129.
+210 of 301 steps (70%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:07 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39386210.xml
+    jobid: 232
+    reason: Missing output files: data/articles/article-data-39386210.xml
+    wildcards: pmid=39386210
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:07 2024]
+Finished job 287.
+211 of 301 steps (70%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:07 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39348452.xml
+    jobid: 292
+    reason: Missing output files: data/articles/article-data-39348452.xml
+    wildcards: pmid=39348452
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:08 2024]
+Finished job 202.
+212 of 301 steps (70%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:08 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39377521.xml
+    jobid: 245
+    reason: Missing output files: data/articles/article-data-39377521.xml
+    wildcards: pmid=39377521
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:08 2024]
+Finished job 26.
+213 of 301 steps (71%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:08 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39479090.xml
+    jobid: 112
+    reason: Missing output files: data/articles/article-data-39479090.xml
+    wildcards: pmid=39479090
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:09 2024]
+Finished job 69.
+214 of 301 steps (71%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:09 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39506902.xml
+    jobid: 74
+    reason: Missing output files: data/articles/article-data-39506902.xml
+    wildcards: pmid=39506902
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:09 2024]
+Finished job 137.
+215 of 301 steps (71%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:09 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39419167.xml
+    jobid: 194
+    reason: Missing output files: data/articles/article-data-39419167.xml
+    wildcards: pmid=39419167
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:09 2024]
+Finished job 197.
+216 of 301 steps (72%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:09 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39498382.xml
+    jobid: 81
+    reason: Missing output files: data/articles/article-data-39498382.xml
+    wildcards: pmid=39498382
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:09 2024]
+Finished job 227.
+217 of 301 steps (72%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:09 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39521013.xml
+    jobid: 52
+    reason: Missing output files: data/articles/article-data-39521013.xml
+    wildcards: pmid=39521013
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:09 2024]
+Finished job 82.
+218 of 301 steps (72%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:09 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39479770.xml
+    jobid: 111
+    reason: Missing output files: data/articles/article-data-39479770.xml
+    wildcards: pmid=39479770
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:10 2024]
+Finished job 142.
+219 of 301 steps (73%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:10 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39536122.xml
+    jobid: 34
+    reason: Missing output files: data/articles/article-data-39536122.xml
+    wildcards: pmid=39536122
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:11 2024]
+Finished job 172.
+220 of 301 steps (73%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:11 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39490027.xml
+    jobid: 94
+    reason: Missing output files: data/articles/article-data-39490027.xml
+    wildcards: pmid=39490027
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:11 2024]
+Finished job 232.
+221 of 301 steps (73%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:11 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39349557.xml
+    jobid: 288
+    reason: Missing output files: data/articles/article-data-39349557.xml
+    wildcards: pmid=39349557
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:12 2024]
+Finished job 245.
+222 of 301 steps (74%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:12 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39398460.xml
+    jobid: 214
+    reason: Missing output files: data/articles/article-data-39398460.xml
+    wildcards: pmid=39398460
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:12 2024]
+Finished job 112.
+223 of 301 steps (74%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:12 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39511637.xml
+    jobid: 64
+    reason: Missing output files: data/articles/article-data-39511637.xml; Code has changed since last execution
+    wildcards: pmid=39511637
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:12 2024]
+Finished job 74.
+224 of 301 steps (74%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:12 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39531278.xml
+    jobid: 48
+    reason: Missing output files: data/articles/article-data-39531278.xml
+    wildcards: pmid=39531278
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:13 2024]
+Finished job 249.
+225 of 301 steps (75%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:13 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39425012.xml
+    jobid: 185
+    reason: Missing output files: data/articles/article-data-39425012.xml
+    wildcards: pmid=39425012
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:13 2024]
+Finished job 111.
+226 of 301 steps (75%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:13 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39485635.xml
+    jobid: 108
+    reason: Missing output files: data/articles/article-data-39485635.xml
+    wildcards: pmid=39485635
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:14 2024]
+Finished job 34.
+227 of 301 steps (75%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:14 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39468707.xml
+    jobid: 125
+    reason: Missing output files: data/articles/article-data-39468707.xml
+    wildcards: pmid=39468707
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:14 2024]
+Finished job 94.
+228 of 301 steps (76%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:14 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39434957.xml
+    jobid: 168
+    reason: Missing output files: data/articles/article-data-39434957.xml
+    wildcards: pmid=39434957
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:14 2024]
+Finished job 288.
+229 of 301 steps (76%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:14 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39353473.xml
+    jobid: 275
+    reason: Missing output files: data/articles/article-data-39353473.xml
+    wildcards: pmid=39353473
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:15 2024]
+Finished job 214.
+230 of 301 steps (76%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:15 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39389403.xml
+    jobid: 228
+    reason: Missing output files: data/articles/article-data-39389403.xml
+    wildcards: pmid=39389403
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:15 2024]
+Finished job 64.
+231 of 301 steps (77%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:15 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39398386.xml
+    jobid: 215
+    reason: Missing output files: data/articles/article-data-39398386.xml
+    wildcards: pmid=39398386
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:16 2024]
+Finished job 48.
+232 of 301 steps (77%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:16 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39551439.xml
+    jobid: 18
+    reason: Missing output files: data/articles/article-data-39551439.xml
+    wildcards: pmid=39551439
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:16 2024]
+Finished job 185.
+233 of 301 steps (77%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:16 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39444602.xml
+    jobid: 155
+    reason: Missing output files: data/articles/article-data-39444602.xml
+    wildcards: pmid=39444602
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:16 2024]
+Finished job 292.
+234 of 301 steps (78%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:16 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39500417.xml
+    jobid: 78
+    reason: Missing output files: data/articles/article-data-39500417.xml
+    wildcards: pmid=39500417
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:17 2024]
+Finished job 125.
+235 of 301 steps (78%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:17 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39489523.xml
+    jobid: 95
+    reason: Missing output files: data/articles/article-data-39489523.xml
+    wildcards: pmid=39489523
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:17 2024]
+Finished job 168.
+236 of 301 steps (78%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:17 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39455598.xml
+    jobid: 138
+    reason: Missing output files: data/articles/article-data-39455598.xml
+    wildcards: pmid=39455598
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:18 2024]
+Finished job 194.
+237 of 301 steps (79%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:18 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39429336.xml
+    jobid: 179
+    reason: Missing output files: data/articles/article-data-39429336.xml
+    wildcards: pmid=39429336
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:19 2024]
+Finished job 228.
+238 of 301 steps (79%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:19 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39482691.xml
+    jobid: 104
+    reason: Missing output files: data/articles/article-data-39482691.xml
+    wildcards: pmid=39482691
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:19 2024]
+Finished job 215.
+239 of 301 steps (79%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:19 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39417730.xml
+    jobid: 198
+    reason: Missing output files: data/articles/article-data-39417730.xml
+    wildcards: pmid=39417730
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:19 2024]
+Finished job 18.
+240 of 301 steps (80%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:19 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39369190.xml
+    jobid: 258
+    reason: Missing output files: data/articles/article-data-39369190.xml
+    wildcards: pmid=39369190
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:20 2024]
+Finished job 155.
+241 of 301 steps (80%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:20 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39536121.xml
+    jobid: 35
+    reason: Missing output files: data/articles/article-data-39536121.xml
+    wildcards: pmid=39536121
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:20 2024]
+Finished job 22.
+242 of 301 steps (80%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:20 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39485894.xml
+    jobid: 107
+    reason: Missing output files: data/articles/article-data-39485894.xml
+    wildcards: pmid=39485894
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:21 2024]
+Finished job 95.
+243 of 301 steps (81%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:21 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39511549.xml
+    jobid: 65
+    reason: Missing output files: data/articles/article-data-39511549.xml
+    wildcards: pmid=39511549
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:21 2024]
+Finished job 138.
+244 of 301 steps (81%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:21 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39435149.xml
+    jobid: 167
+    reason: Missing output files: data/articles/article-data-39435149.xml
+    wildcards: pmid=39435149
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:21 2024]
+Finished job 179.
+245 of 301 steps (81%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:21 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39559920.xml
+    jobid: 5
+    reason: Missing output files: data/articles/article-data-39559920.xml
+    wildcards: pmid=39559920
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:21 2024]
+Finished job 209.
+246 of 301 steps (82%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:21 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39500905.xml
+    jobid: 77
+    reason: Missing output files: data/articles/article-data-39500905.xml
+    wildcards: pmid=39500905
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:21 2024]
+Finished job 269.
+247 of 301 steps (82%) done
+[Wed Nov 20 22:05:21 2024]
+Finished job 29.
+248 of 301 steps (82%) done
+Select jobs to execute...
+Execute 2 jobs...
+
+[Wed Nov 20 22:05:21 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39537389.xml
+    jobid: 31
+    reason: Missing output files: data/articles/article-data-39537389.xml
+    wildcards: pmid=39537389
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 22:05:21 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39445819.xml
+    jobid: 151
+    reason: Missing output files: data/articles/article-data-39445819.xml
+    wildcards: pmid=39445819
+    resources: tmpdir=/tmp
+
+Select jobs to execute...
+Waiting for more resources.
+[Wed Nov 20 22:05:22 2024]
+Finished job 104.
+249 of 301 steps (83%) done
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:22 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39369205.xml
+    jobid: 257
+    reason: Missing output files: data/articles/article-data-39369205.xml
+    wildcards: pmid=39369205
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:22 2024]
+Finished job 198.
+250 of 301 steps (83%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:22 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39493003.xml
+    jobid: 91
+    reason: Missing output files: data/articles/article-data-39493003.xml
+    wildcards: pmid=39493003
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:23 2024]
+Finished job 258.
+251 of 301 steps (83%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:23 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39472619.xml
+    jobid: 120
+    reason: Missing output files: data/articles/article-data-39472619.xml
+    wildcards: pmid=39472619
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:23 2024]
+Finished job 275.
+252 of 301 steps (84%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:23 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39400062.xml
+    jobid: 211
+    reason: Missing output files: data/articles/article-data-39400062.xml
+    wildcards: pmid=39400062
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:24 2024]
+Finished job 65.
+253 of 301 steps (84%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:24 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39493634.xml
+    jobid: 89
+    reason: Missing output files: data/articles/article-data-39493634.xml
+    wildcards: pmid=39493634
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:24 2024]
+Finished job 167.
+254 of 301 steps (84%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:25 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39446250.xml
+    jobid: 149
+    reason: Missing output files: data/articles/article-data-39446250.xml
+    wildcards: pmid=39446250
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:25 2024]
+Finished job 5.
+255 of 301 steps (85%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:25 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39457356.xml
+    jobid: 134
+    reason: Missing output files: data/articles/article-data-39457356.xml
+    wildcards: pmid=39457356
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:25 2024]
+Finished job 257.
+256 of 301 steps (85%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:25 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39370044.xml
+    jobid: 254
+    reason: Missing output files: data/articles/article-data-39370044.xml
+    wildcards: pmid=39370044
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:26 2024]
+Finished job 91.
+257 of 301 steps (85%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:26 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39524912.xml
+    jobid: 44
+    reason: Missing output files: data/articles/article-data-39524912.xml
+    wildcards: pmid=39524912
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:26 2024]
+Finished job 120.
+258 of 301 steps (86%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:26 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39436395.xml
+    jobid: 164
+    reason: Missing output files: data/articles/article-data-39436395.xml
+    wildcards: pmid=39436395
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:27 2024]
+Finished job 211.
+259 of 301 steps (86%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:27 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39391697.xml
+    jobid: 224
+    reason: Missing output files: data/articles/article-data-39391697.xml
+    wildcards: pmid=39391697
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:28 2024]
+Finished job 108.
+260 of 301 steps (86%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:28 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39350480.xml
+    jobid: 284
+    reason: Missing output files: data/articles/article-data-39350480.xml
+    wildcards: pmid=39350480
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:28 2024]
+Finished job 81.
+261 of 301 steps (87%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:28 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39457358.xml
+    jobid: 133
+    reason: Missing output files: data/articles/article-data-39457358.xml
+    wildcards: pmid=39457358
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:28 2024]
+Finished job 52.
+262 of 301 steps (87%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:28 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39370158.xml
+    jobid: 253
+    reason: Missing output files: data/articles/article-data-39370158.xml
+    wildcards: pmid=39370158
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:28 2024]
+Finished job 89.
+263 of 301 steps (87%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:28 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39436440.xml
+    jobid: 163
+    reason: Missing output files: data/articles/article-data-39436440.xml
+    wildcards: pmid=39436440
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:28 2024]
+Finished job 149.
+264 of 301 steps (88%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:28 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39391784.xml
+    jobid: 223
+    reason: Missing output files: data/articles/article-data-39391784.xml
+    wildcards: pmid=39391784
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:29 2024]
+Finished job 134.
+265 of 301 steps (88%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:29 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39483438.xml
+    jobid: 103
+    reason: Missing output files: data/articles/article-data-39483438.xml
+    wildcards: pmid=39483438
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:29 2024]
+Finished job 254.
+266 of 301 steps (88%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:29 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39518437.xml
+    jobid: 57
+    reason: Missing output files: data/articles/article-data-39518437.xml
+    wildcards: pmid=39518437
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:29 2024]
+Finished job 44.
+267 of 301 steps (89%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:29 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39366339.xml
+    jobid: 262
+    reason: Missing output files: data/articles/article-data-39366339.xml
+    wildcards: pmid=39366339
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:30 2024]
+Finished job 164.
+268 of 301 steps (89%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:30 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39354396.xml
+    jobid: 279
+    reason: Missing output files: data/articles/article-data-39354396.xml
+    wildcards: pmid=39354396
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:30 2024]
+Finished job 78.
+269 of 301 steps (89%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:30 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39558250.xml
+    jobid: 9
+    reason: Missing output files: data/articles/article-data-39558250.xml
+    wildcards: pmid=39558250
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:31 2024]
+Finished job 77.
+270 of 301 steps (90%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:31 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39338088.xml
+    jobid: 301
+    reason: Missing output files: data/articles/article-data-39338088.xml
+    wildcards: pmid=39338088
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:31 2024]
+Finished job 151.
+271 of 301 steps (90%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:31 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39507365.xml
+    jobid: 72
+    reason: Missing output files: data/articles/article-data-39507365.xml
+    wildcards: pmid=39507365
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:31 2024]
+Finished job 31.
+272 of 301 steps (90%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:31 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39400651.xml
+    jobid: 210
+    reason: Missing output files: data/articles/article-data-39400651.xml
+    wildcards: pmid=39400651
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:32 2024]
+Finished job 103.
+273 of 301 steps (91%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:32 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39537445.xml
+    jobid: 30
+    reason: Missing output files: data/articles/article-data-39537445.xml
+    wildcards: pmid=39537445
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:33 2024]
+Finished job 262.
+274 of 301 steps (91%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:33 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39358980.xml
+    jobid: 270
+    reason: Missing output files: data/articles/article-data-39358980.xml
+    wildcards: pmid=39358980
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:33 2024]
+Finished job 57.
+275 of 301 steps (91%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:33 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39429158.xml
+    jobid: 180
+    reason: Missing output files: data/articles/article-data-39429158.xml
+    wildcards: pmid=39429158
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:33 2024]
+Finished job 279.
+276 of 301 steps (92%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:33 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39474404.xml
+    jobid: 117
+    reason: Missing output files: data/articles/article-data-39474404.xml
+    wildcards: pmid=39474404
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:34 2024]
+Finished job 107.
+277 of 301 steps (92%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:34 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39380062.xml
+    jobid: 241
+    reason: Missing output files: data/articles/article-data-39380062.xml
+    wildcards: pmid=39380062
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:34 2024]
+Finished job 35.
+278 of 301 steps (92%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:34 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39489282.xml
+    jobid: 102
+    reason: Missing output files: data/articles/article-data-39489282.xml
+    wildcards: pmid=39489282
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:34 2024]
+Finished job 301.
+279 of 301 steps (93%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:34 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39529893.xml
+    jobid: 42
+    reason: Missing output files: data/articles/article-data-39529893.xml
+    wildcards: pmid=39529893
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:35 2024]
+Finished job 224.
+280 of 301 steps (93%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:35 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39472233.xml
+    jobid: 121
+    reason: Missing output files: data/articles/article-data-39472233.xml
+    wildcards: pmid=39472233
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:35 2024]
+Finished job 30.
+281 of 301 steps (93%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:35 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39428555.xml
+    jobid: 181
+    reason: Missing output files: data/articles/article-data-39428555.xml
+    wildcards: pmid=39428555
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:36 2024]
+Finished job 284.
+282 of 301 steps (94%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:36 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39516425.xml
+    jobid: 61
+    reason: Missing output files: data/articles/article-data-39516425.xml
+    wildcards: pmid=39516425
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:37 2024]
+Finished job 270.
+283 of 301 steps (94%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:37 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39358973.xml
+    jobid: 271
+    reason: Missing output files: data/articles/article-data-39358973.xml
+    wildcards: pmid=39358973
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:37 2024]
+Finished job 117.
+284 of 301 steps (94%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:37 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39553000.xml
+    jobid: 14
+    reason: Missing output files: data/articles/article-data-39553000.xml
+    wildcards: pmid=39553000
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:37 2024]
+Finished job 133.
+285 of 301 steps (95%) done
+[Wed Nov 20 22:05:38 2024]
+Finished job 241.
+286 of 301 steps (95%) done
+[Wed Nov 20 22:05:38 2024]
+Finished job 42.
+287 of 301 steps (95%) done
+[Wed Nov 20 22:05:39 2024]
+Finished job 121.
+288 of 301 steps (96%) done
+[Wed Nov 20 22:05:39 2024]
+Finished job 9.
+289 of 301 steps (96%) done
+[Wed Nov 20 22:05:39 2024]
+Finished job 181.
+290 of 301 steps (96%) done
+[Wed Nov 20 22:05:40 2024]
+Finished job 61.
+291 of 301 steps (97%) done
+[Wed Nov 20 22:05:40 2024]
+Finished job 271.
+292 of 301 steps (97%) done
+[Wed Nov 20 22:05:40 2024]
+Finished job 14.
+293 of 301 steps (97%) done
+[Wed Nov 20 22:05:42 2024]
+Finished job 180.
+294 of 301 steps (98%) done
+[Wed Nov 20 22:05:42 2024]
+Finished job 253.
+295 of 301 steps (98%) done
+[Wed Nov 20 22:05:42 2024]
+Finished job 163.
+296 of 301 steps (98%) done
+[Wed Nov 20 22:05:42 2024]
+Finished job 223.
+297 of 301 steps (99%) done
+[Wed Nov 20 22:05:45 2024]
+Finished job 72.
+298 of 301 steps (99%) done
+[Wed Nov 20 22:05:46 2024]
+Finished job 210.
+299 of 301 steps (99%) done
+[Wed Nov 20 22:05:48 2024]
+Finished job 102.
+300 of 301 steps (99.7%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:05:48 2024]
+localrule all:
+    input: data/raw/pmids.xml, data/articles/article-data-39562810.xml, data/articles/article-data-39560821.xml, data/articles/article-data-39560319.xml, data/articles/article-data-39559920.xml, data/articles/article-data-39559556.xml, data/articles/article-data-39558820.xml, data/articles/article-data-39558292.xml, data/articles/article-data-39558250.xml, data/articles/article-data-39557995.xml, data/articles/article-data-39557089.xml, data/articles/article-data-39556251.xml, data/articles/article-data-39554298.xml, data/articles/article-data-39553000.xml, data/articles/article-data-39552393.xml, data/articles/article-data-39551951.xml, data/articles/article-data-39551591.xml, data/articles/article-data-39551439.xml, data/articles/article-data-39550783.xml, data/articles/article-data-39550693.xml, data/articles/article-data-39550105.xml, data/articles/article-data-39549937.xml, data/articles/article-data-39549783.xml, data/articles/article-data-39547729.xml, data/articles/article-data-39545965.xml, data/articles/article-data-39544193.xml, data/articles/article-data-39543596.xml, data/articles/article-data-39542232.xml, data/articles/article-data-39540209.xml, data/articles/article-data-39537445.xml, data/articles/article-data-39537389.xml, data/articles/article-data-39536394.xml, data/articles/article-data-39536123.xml, data/articles/article-data-39536122.xml, data/articles/article-data-39536121.xml, data/articles/article-data-39536120.xml, data/articles/article-data-39536118.xml, data/articles/article-data-39536117.xml, data/articles/article-data-39536116.xml, data/articles/article-data-39534773.xml, data/articles/article-data-39534771.xml, data/articles/article-data-39529893.xml, data/articles/article-data-39526116.xml, data/articles/article-data-39524912.xml, data/articles/article-data-39524607.xml, data/articles/article-data-39524261.xml, data/articles/article-data-39532773.xml, data/articles/article-data-39531278.xml, data/articles/article-data-39529266.xml, data/articles/article-data-39527314.xml, data/articles/article-data-39522688.xml, data/articles/article-data-39521013.xml, data/articles/article-data-39520983.xml, data/articles/article-data-39520297.xml, data/articles/article-data-39518964.xml, data/articles/article-data-39518632.xml, data/articles/article-data-39518437.xml, data/articles/article-data-39516956.xml, data/articles/article-data-39516880.xml, data/articles/article-data-39516528.xml, data/articles/article-data-39516425.xml, data/articles/article-data-39515869.xml, data/articles/article-data-39512484.xml, data/articles/article-data-39511637.xml, data/articles/article-data-39511549.xml, data/articles/article-data-39511082.xml, data/articles/article-data-39510798.xml, data/articles/article-data-39510792.xml, data/articles/article-data-39510073.xml, data/articles/article-data-39508631.xml, data/articles/article-data-39507661.xml, data/articles/article-data-39507365.xml, data/articles/article-data-39507087.xml, data/articles/article-data-39506902.xml, data/articles/article-data-39504683.xml, data/articles/article-data-39500939.xml, data/articles/article-data-39500905.xml, data/articles/article-data-39500417.xml, data/articles/article-data-39499751.xml, data/articles/article-data-39499692.xml, data/articles/article-data-39498382.xml, data/articles/article-data-39497750.xml, data/articles/article-data-39497519.xml, data/articles/article-data-39497076.xml, data/articles/article-data-39497009.xml, data/articles/article-data-39496842.xml, data/articles/article-data-39496183.xml, data/articles/article-data-39495479.xml, data/articles/article-data-39493634.xml, data/articles/article-data-39493249.xml, data/articles/article-data-39493003.xml, data/articles/article-data-39491570.xml, data/articles/article-data-39490617.xml, data/articles/article-data-39490027.xml, data/articles/article-data-39489523.xml, data/articles/article-data-39489522.xml, data/articles/article-data-39489520.xml, data/articles/article-data-39489519.xml, data/articles/article-data-39489518.xml, data/articles/article-data-39489515.xml, data/articles/article-data-39489514.xml, data/articles/article-data-39489282.xml, data/articles/article-data-39483438.xml, data/articles/article-data-39482691.xml, data/articles/article-data-39488359.xml, data/articles/article-data-39488240.xml, data/articles/article-data-39485894.xml, data/articles/article-data-39485635.xml, data/articles/article-data-39482903.xml, data/articles/article-data-39482218.xml, data/articles/article-data-39479770.xml, data/articles/article-data-39479090.xml, data/articles/article-data-39478809.xml, data/articles/article-data-39478711.xml, data/articles/article-data-39477428.xml, data/articles/article-data-39475394.xml, data/articles/article-data-39474404.xml, data/articles/article-data-39474148.xml, data/articles/article-data-39473828.xml, data/articles/article-data-39472619.xml, data/articles/article-data-39472233.xml, data/articles/article-data-39471195.xml, data/articles/article-data-39469684.xml, data/articles/article-data-39469144.xml, data/articles/article-data-39468707.xml, data/articles/article-data-39468090.xml, data/articles/article-data-39465803.xml, data/articles/article-data-39464351.xml, data/articles/article-data-39459851.xml, data/articles/article-data-39459041.xml, data/articles/article-data-39458187.xml, data/articles/article-data-39457567.xml, data/articles/article-data-39457358.xml, data/articles/article-data-39457356.xml, data/articles/article-data-39457266.xml, data/articles/article-data-39456822.xml, data/articles/article-data-39456253.xml, data/articles/article-data-39455598.xml, data/articles/article-data-39455248.xml, data/articles/article-data-39454992.xml, data/articles/article-data-39454250.xml, data/articles/article-data-39451987.xml, data/articles/article-data-39451477.xml, data/articles/article-data-39450880.xml, data/articles/article-data-39450181.xml, data/articles/article-data-39449339.xml, data/articles/article-data-39449018.xml, data/articles/article-data-39447830.xml, data/articles/article-data-39446250.xml, data/articles/article-data-39446164.xml, data/articles/article-data-39445819.xml, data/articles/article-data-39445814.xml, data/articles/article-data-39444797.xml, data/articles/article-data-39444752.xml, data/articles/article-data-39444602.xml, data/articles/article-data-39443935.xml, data/articles/article-data-39441526.xml, data/articles/article-data-39438966.xml, data/articles/article-data-39438926.xml, data/articles/article-data-39438198.xml, data/articles/article-data-39438144.xml, data/articles/article-data-39436613.xml, data/articles/article-data-39436440.xml, data/articles/article-data-39436395.xml, data/articles/article-data-39435694.xml, data/articles/article-data-39435656.xml, data/articles/article-data-39435149.xml, data/articles/article-data-39434957.xml, data/articles/article-data-39434919.xml, data/articles/article-data-39434281.xml, data/articles/article-data-39434179.xml, data/articles/article-data-39433997.xml, data/articles/article-data-39433942.xml, data/articles/article-data-39433402.xml, data/articles/article-data-39430651.xml, data/articles/article-data-39430594.xml, data/articles/article-data-39429966.xml, data/articles/article-data-39429741.xml, data/articles/article-data-39429336.xml, data/articles/article-data-39429158.xml, data/articles/article-data-39428555.xml, data/articles/article-data-39426876.xml, data/articles/article-data-39426837.xml, data/articles/article-data-39425101.xml, data/articles/article-data-39425012.xml, data/articles/article-data-39424264.xml, data/articles/article-data-39423876.xml, data/articles/article-data-39423759.xml, data/articles/article-data-39423742.xml, data/articles/article-data-39421860.xml, data/articles/article-data-39420307.xml, data/articles/article-data-39419616.xml, data/articles/article-data-39419470.xml, data/articles/article-data-39419167.xml, data/articles/article-data-39418956.xml, data/articles/article-data-39418782.xml, data/articles/article-data-39418080.xml, data/articles/article-data-39417730.xml, data/articles/article-data-39417642.xml, data/articles/article-data-39416495.xml, data/articles/article-data-39415747.xml, data/articles/article-data-39415455.xml, data/articles/article-data-39409138.xml, data/articles/article-data-39407877.xml, data/articles/article-data-39404791.xml, data/articles/article-data-39403255.xml, data/articles/article-data-39402811.xml, data/articles/article-data-39402206.xml, data/articles/article-data-39402205.xml, data/articles/article-data-39400651.xml, data/articles/article-data-39400062.xml, data/articles/article-data-39399934.xml, data/articles/article-data-39399920.xml, data/articles/article-data-39398460.xml, data/articles/article-data-39398386.xml, data/articles/article-data-39396825.xml, data/articles/article-data-39395470.xml, data/articles/article-data-39388147.xml, data/articles/article-data-39393059.xml, data/articles/article-data-39392878.xml, data/articles/article-data-39392635.xml, data/articles/article-data-39392098.xml, data/articles/article-data-39391784.xml, data/articles/article-data-39391697.xml, data/articles/article-data-39391317.xml, data/articles/article-data-39390854.xml, data/articles/article-data-39390853.xml, data/articles/article-data-39389403.xml, data/articles/article-data-39389388.xml, data/articles/article-data-39388619.xml, data/articles/article-data-39386803.xml, data/articles/article-data-39386210.xml, data/articles/article-data-39385068.xml, data/articles/article-data-39384321.xml, data/articles/article-data-39382809.xml, data/articles/article-data-39382736.xml, data/articles/article-data-39382470.xml, data/articles/article-data-39381546.xml, data/articles/article-data-39381125.xml, data/articles/article-data-39380657.xml, data/articles/article-data-39380062.xml, data/articles/article-data-39379918.xml, data/articles/article-data-39379779.xml, data/articles/article-data-39379681.xml, data/articles/article-data-39377521.xml, data/articles/article-data-39376493.xml, data/articles/article-data-39374820.xml, data/articles/article-data-39374592.xml, data/articles/article-data-39374300.xml, data/articles/article-data-39372835.xml, data/articles/article-data-39372136.xml, data/articles/article-data-39371163.xml, data/articles/article-data-39370158.xml, data/articles/article-data-39370044.xml, data/articles/article-data-39369845.xml, data/articles/article-data-39369712.xml, data/articles/article-data-39369205.xml, data/articles/article-data-39369190.xml, data/articles/article-data-39368535.xml, data/articles/article-data-39367848.xml, data/articles/article-data-39367278.xml, data/articles/article-data-39366339.xml, data/articles/article-data-39365220.xml, data/articles/article-data-39364804.xml, data/articles/article-data-39363376.xml, data/articles/article-data-39361178.xml, data/articles/article-data-39361124.xml, data/articles/article-data-39360869.xml, data/articles/article-data-39360535.xml, data/articles/article-data-39358980.xml, data/articles/article-data-39358973.xml, data/articles/article-data-39358543.xml, data/articles/article-data-39358535.xml, data/articles/article-data-39357795.xml, data/articles/article-data-39353473.xml, data/articles/article-data-39356507.xml, data/articles/article-data-39355045.xml, data/articles/article-data-39354691.xml, data/articles/article-data-39354396.xml, data/articles/article-data-39354320.xml, data/articles/article-data-39352725.xml, data/articles/article-data-39352145.xml, data/articles/article-data-39351379.xml, data/articles/article-data-39350480.xml, data/articles/article-data-39350082.xml, data/articles/article-data-39349924.xml, data/articles/article-data-39349781.xml, data/articles/article-data-39349557.xml, data/articles/article-data-39349473.xml, data/articles/article-data-39348850.xml, data/articles/article-data-39348500.xml, data/articles/article-data-39348452.xml, data/articles/article-data-39346769.xml, data/articles/article-data-39345344.xml, data/articles/article-data-39345136.xml, data/articles/article-data-39343334.xml, data/articles/article-data-39342666.xml, data/articles/article-data-39340624.xml, data/articles/article-data-39339976.xml, data/articles/article-data-39338165.xml, data/articles/article-data-39338088.xml
+    jobid: 0
+    reason: Input files updated by another job: data/articles/article-data-39511637.xml, data/articles/article-data-39511549.xml, data/articles/article-data-39353473.xml, data/articles/article-data-39506902.xml, data/articles/article-data-39516956.xml, data/articles/article-data-39398460.xml, data/articles/article-data-39389388.xml, data/articles/article-data-39438198.xml, data/articles/article-data-39399920.xml, data/articles/article-data-39348850.xml, data/articles/article-data-39391784.xml, data/articles/article-data-39472619.xml, data/articles/article-data-39372136.xml, data/articles/article-data-39550783.xml, data/articles/article-data-39361178.xml, data/articles/article-data-39369845.xml, data/articles/article-data-39512484.xml, data/articles/article-data-39510073.xml, data/articles/article-data-39490617.xml, data/articles/article-data-39456822.xml, data/articles/article-data-39404791.xml, data/articles/article-data-39457358.xml, data/articles/article-data-39444752.xml, data/articles/article-data-39468707.xml, data/articles/article-data-39459041.xml, data/articles/article-data-39478711.xml, data/articles/article-data-39549937.xml, data/articles/article-data-39549783.xml, data/articles/article-data-39479770.xml, data/articles/article-data-39409138.xml, data/articles/article-data-39454250.xml, data/articles/article-data-39449018.xml, data/articles/article-data-39423876.xml, data/articles/article-data-39403255.xml, data/articles/article-data-39433402.xml, data/articles/article-data-39443935.xml, data/articles/article-data-39521013.xml, data/articles/article-data-39489514.xml, data/articles/article-data-39398386.xml, data/articles/article-data-39435694.xml, data/articles/article-data-39429336.xml, data/articles/article-data-39366339.xml, data/articles/article-data-39429158.xml, data/articles/article-data-39420307.xml, data/articles/article-data-39393059.xml, data/articles/article-data-39496842.xml, data/articles/article-data-39450181.xml, data/articles/article-data-39552393.xml, data/articles/article-data-39489520.xml, data/articles/article-data-39540209.xml, data/articles/article-data-39485635.xml, data/articles/article-data-39391697.xml, data/articles/article-data-39379779.xml, data/articles/article-data-39455598.xml, data/articles/article-data-39348452.xml, data/articles/article-data-39510792.xml, data/articles/article-data-39419167.xml, data/articles/article-data-39459851.xml, data/articles/article-data-39415747.xml, data/articles/article-data-39557089.xml, data/articles/article-data-39457567.xml, data/articles/article-data-39346769.xml, data/articles/article-data-39529893.xml, data/articles/article-data-39447830.xml, data/articles/article-data-39426876.xml, data/articles/article-data-39444602.xml, data/articles/article-data-39449339.xml, data/articles/article-data-39520983.xml, data/articles/article-data-39382809.xml, data/articles/article-data-39558292.xml, data/articles/article-data-39536118.xml, data/articles/article-data-39496183.xml, data/articles/article-data-39536121.xml, data/articles/article-data-39482691.xml, data/articles/article-data-39560319.xml, data/articles/article-data-39499751.xml, data/articles/article-data-39367848.xml, data/articles/article-data-39456253.xml, data/articles/article-data-39550105.xml, data/articles/article-data-39524261.xml, data/articles/article-data-39424264.xml, data/articles/article-data-39507661.xml, data/articles/article-data-39516528.xml, data/articles/article-data-39374592.xml, data/articles/article-data-39374300.xml, data/articles/article-data-39518632.xml, data/articles/article-data-39544193.xml, data/articles/article-data-39367278.xml, data/articles/article-data-39369190.xml, data/articles/article-data-39423759.xml, data/articles/article-data-39536120.xml, data/articles/article-data-39489519.xml, data/articles/article-data-39497750.xml, data/articles/article-data-39537445.xml, data/articles/article-data-39537389.xml, data/articles/article-data-39497076.xml, data/articles/article-data-39520297.xml, data/articles/article-data-39418956.xml, data/articles/article-data-39553000.xml, data/articles/article-data-39402811.xml, data/articles/article-data-39402205.xml, data/articles/article-data-39390854.xml, data/articles/article-data-39430594.xml, data/articles/article-data-39339976.xml, data/articles/article-data-39434179.xml, data/articles/article-data-39445819.xml, data/articles/article-data-39508631.xml, data/articles/article-data-39386803.xml, data/articles/article-data-39500417.xml, data/articles/article-data-39488359.xml, data/articles/article-data-39534773.xml, data/articles/article-data-39536394.xml, data/articles/article-data-39518437.xml, data/articles/article-data-39474148.xml, data/articles/article-data-39438926.xml, data/articles/article-data-39384321.xml, data/articles/article-data-39396825.xml, data/articles/article-data-39365220.xml, data/articles/article-data-39551591.xml, data/articles/article-data-39551439.xml, data/articles/article-data-39475394.xml, data/articles/article-data-39457266.xml, data/articles/article-data-39358973.xml, data/articles/article-data-39349557.xml, data/articles/article-data-39342666.xml, data/articles/article-data-39380062.xml, data/articles/article-data-39360869.xml, data/articles/article-data-39338165.xml, data/articles/article-data-39469684.xml, data/articles/article-data-39380657.xml, data/articles/article-data-39438966.xml, data/articles/article-data-39497519.xml, data/articles/article-data-39529266.xml, data/articles/article-data-39445814.xml, data/articles/article-data-39357795.xml, data/articles/article-data-39446164.xml, data/articles/article-data-39361124.xml, data/articles/article-data-39419616.xml, data/articles/article-data-39358980.xml, data/articles/article-data-39522688.xml, data/articles/article-data-39426837.xml, data/articles/article-data-39438144.xml, data/articles/article-data-39478809.xml, data/articles/article-data-39473828.xml, data/articles/article-data-39388619.xml, data/articles/article-data-39507087.xml, data/articles/article-data-39360535.xml, data/articles/article-data-39482903.xml, data/articles/article-data-39354396.xml, data/articles/article-data-39350480.xml, data/articles/article-data-39349924.xml, data/articles/article-data-39376493.xml, data/articles/article-data-39562810.xml, data/articles/article-data-39558820.xml, data/articles/article-data-39524912.xml, data/articles/article-data-39428555.xml, data/articles/article-data-39348500.xml, data/articles/article-data-39345136.xml, data/articles/article-data-39435656.xml, data/articles/article-data-39458187.xml, data/articles/article-data-39471195.xml, data/articles/article-data-39430651.xml, data/articles/article-data-39497009.xml, data/articles/article-data-39511082.xml, data/articles/article-data-39400651.xml, data/articles/article-data-39418782.xml, data/articles/article-data-39402206.xml, data/articles/article-data-39489515.xml, data/articles/article-data-39390853.xml, data/articles/article-data-39493249.xml, data/articles/article-data-39421860.xml, data/articles/article-data-39441526.xml, data/articles/article-data-39392635.xml, data/articles/article-data-39468090.xml, data/articles/article-data-39340624.xml, data/articles/article-data-39469144.xml, data/articles/article-data-39490027.xml, data/articles/article-data-39489522.xml, data/articles/article-data-39358543.xml, data/articles/article-data-39369712.xml, data/articles/article-data-39382470.xml, data/articles/article-data-39363376.xml, data/articles/article-data-39436395.xml, data/articles/article-data-39516880.xml, data/articles/article-data-39454992.xml, data/articles/article-data-39504683.xml, data/articles/article-data-39434919.xml, data/articles/article-data-39474404.xml, data/articles/article-data-39417642.xml, data/articles/article-data-39391317.xml, data/articles/article-data-39415455.xml, data/articles/article-data-39547729.xml, data/articles/article-data-39560821.xml, data/articles/article-data-39536116.xml, data/articles/article-data-39500939.xml, data/articles/article-data-39377521.xml, data/articles/article-data-39386210.xml, data/articles/article-data-39399934.xml, data/articles/article-data-39531278.xml, data/articles/article-data-39350082.xml, data/articles/article-data-39451987.xml, data/articles/article-data-39371163.xml, data/articles/article-data-39488240.xml, data/articles/article-data-39425012.xml, data/articles/article-data-39446250.xml, data/articles/article-data-39536117.xml, data/articles/article-data-39482218.xml, data/articles/article-data-39349473.xml, data/articles/article-data-39556251.xml, data/articles/article-data-39559556.xml, data/articles/article-data-39518964.xml, data/articles/article-data-39498382.xml, data/articles/article-data-39491570.xml, data/articles/article-data-39349781.xml, data/articles/article-data-39338088.xml, data/articles/article-data-39536122.xml, data/articles/article-data-39465803.xml, data/articles/article-data-39423742.xml, data/articles/article-data-39434281.xml, data/articles/article-data-39436440.xml, data/articles/article-data-39550693.xml, data/articles/article-data-39417730.xml, data/articles/article-data-39558250.xml, data/articles/article-data-39516425.xml, data/articles/article-data-39554298.xml, data/articles/article-data-39479090.xml, data/articles/article-data-39500905.xml, data/articles/article-data-39534771.xml, data/articles/article-data-39385068.xml, data/articles/article-data-39370158.xml, data/articles/article-data-39354691.xml, data/articles/article-data-39343334.xml, data/articles/article-data-39392098.xml, data/articles/article-data-39557995.xml, data/articles/article-data-39493003.xml, data/articles/article-data-39457356.xml, data/articles/article-data-39433997.xml, data/articles/article-data-39372835.xml, data/articles/article-data-39395470.xml, data/articles/article-data-39455248.xml, data/articles/article-data-39418080.xml, data/articles/article-data-39392878.xml, data/articles/article-data-39526116.xml, data/articles/article-data-39532773.xml, data/articles/article-data-39436613.xml, data/articles/article-data-39435149.xml, data/articles/article-data-39489282.xml, data/articles/article-data-39419470.xml, data/articles/article-data-39507365.xml, data/articles/article-data-39444797.xml, data/articles/article-data-39381546.xml, data/articles/article-data-39374820.xml, data/articles/article-data-39451477.xml, data/articles/article-data-39551951.xml, data/articles/article-data-39355045.xml, data/articles/article-data-39527314.xml, data/articles/article-data-39351379.xml, data/articles/article-data-39400062.xml, data/articles/article-data-39483438.xml, data/articles/article-data-39450880.xml, data/articles/article-data-39382736.xml, data/articles/article-data-39364804.xml, data/articles/article-data-39510798.xml, data/articles/article-data-39389403.xml, data/articles/article-data-39354320.xml, data/articles/article-data-39429741.xml, data/articles/article-data-39345344.xml, data/articles/article-data-39434957.xml, data/articles/article-data-39381125.xml, data/articles/article-data-39545965.xml, data/articles/article-data-39388147.xml, data/articles/article-data-39477428.xml, data/articles/article-data-39543596.xml, data/articles/article-data-39499692.xml, data/articles/article-data-39472233.xml, data/articles/article-data-39416495.xml, data/articles/article-data-39489523.xml, data/articles/article-data-39379681.xml, data/articles/article-data-39352145.xml, data/articles/article-data-39485894.xml, data/articles/article-data-39368535.xml, data/articles/article-data-39433942.xml, data/articles/article-data-39464351.xml, data/articles/article-data-39542232.xml, data/articles/article-data-39407877.xml, data/articles/article-data-39495479.xml, data/articles/article-data-39559920.xml, data/articles/article-data-39524607.xml, data/articles/article-data-39425101.xml, data/articles/article-data-39536123.xml, data/articles/article-data-39429966.xml, data/articles/article-data-39370044.xml, data/articles/article-data-39358535.xml, data/articles/article-data-39356507.xml, data/articles/article-data-39379918.xml, data/articles/article-data-39352725.xml, data/articles/article-data-39515869.xml, data/articles/article-data-39493634.xml, data/articles/article-data-39489518.xml, data/articles/article-data-39369205.xml
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:05:48 2024]
+Finished job 0.
+301 of 301 steps (100%) done
+Complete log: .snakemake/log/2024-11-20T220334.453624.snakemake.log

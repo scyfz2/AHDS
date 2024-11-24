@@ -1,0 +1,55 @@
+host: Fan
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 16
+Rules claiming more threads will be scaled down.
+Job stats:
+job          count
+---------  -------
+all              1
+plot             1
+transform        1
+total            3
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 10:48:39 2024]
+localrule transform:
+    input: data/WHO-COVID-19-global-data.csv
+    output: intermediates/plot_df.csv
+    jobid: 2
+    reason: Code has changed since last execution
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 10:48:40 2024]
+Finished job 2.
+1 of 3 steps (33%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 10:48:40 2024]
+localrule plot:
+    input: intermediates/plot_df.csv
+    output: results/fig-simple.png
+    jobid: 1
+    reason: Input files updated by another job: intermediates/plot_df.csv
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 10:48:42 2024]
+Finished job 1.
+2 of 3 steps (67%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 10:48:42 2024]
+localrule all:
+    input: results/fig-simple.png
+    jobid: 0
+    reason: Input files updated by another job: results/fig-simple.png
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 10:48:42 2024]
+Finished job 0.
+3 of 3 steps (100%) done
+Complete log: .snakemake/log/2024-11-20T104839.411103.snakemake.log

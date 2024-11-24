@@ -1,0 +1,161 @@
+host: Fan
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                count
+---------------  -------
+all                    1
+plot_individual        4
+plot_summary           1
+transform_DE           1
+transform_FR           1
+transform_GB           1
+transform_US           1
+total                 10
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Oct 31 12:21:37 2024]
+localrule transform_US:
+    input: topic-wildcards/1-transform-wildcards.R, data/WHO-COVID-19-global-data.csv
+    output: intermediates/plot_df_US.csv
+    jobid: 5
+    reason: Missing output files: intermediates/plot_df_US.csv
+    resources: tmpdir=/tmp
+
+[Thu Oct 31 12:21:38 2024]
+Finished job 5.
+1 of 10 steps (10%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Oct 31 12:21:38 2024]
+localrule plot_individual:
+    input: topic-config/2-plot-config.R, intermediates/plot_df_US.csv
+    output: results/fig_US.png
+    jobid: 9
+    reason: Missing output files: results/fig_US.png; Input files updated by another job: intermediates/plot_df_US.csv
+    wildcards: country_code=US
+    resources: tmpdir=/tmp
+
+[Thu Oct 31 12:21:39 2024]
+Finished job 9.
+2 of 10 steps (20%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Oct 31 12:21:39 2024]
+localrule transform_DE:
+    input: topic-wildcards/1-transform-wildcards.R, data/WHO-COVID-19-global-data.csv
+    output: intermediates/plot_df_DE.csv
+    jobid: 4
+    reason: Missing output files: intermediates/plot_df_DE.csv
+    resources: tmpdir=/tmp
+
+[Thu Oct 31 12:21:40 2024]
+Finished job 4.
+3 of 10 steps (30%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Oct 31 12:21:40 2024]
+localrule plot_individual:
+    input: topic-config/2-plot-config.R, intermediates/plot_df_DE.csv
+    output: results/fig_DE.png
+    jobid: 8
+    reason: Missing output files: results/fig_DE.png; Input files updated by another job: intermediates/plot_df_DE.csv
+    wildcards: country_code=DE
+    resources: tmpdir=/tmp
+
+[Thu Oct 31 12:21:41 2024]
+Finished job 8.
+4 of 10 steps (40%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Oct 31 12:21:41 2024]
+localrule transform_FR:
+    input: topic-wildcards/1-transform-wildcards.R, data/WHO-COVID-19-global-data.csv
+    output: intermediates/plot_df_FR.csv
+    jobid: 3
+    reason: Missing output files: intermediates/plot_df_FR.csv
+    resources: tmpdir=/tmp
+
+[Thu Oct 31 12:21:42 2024]
+Finished job 3.
+5 of 10 steps (50%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Oct 31 12:21:42 2024]
+localrule transform_GB:
+    input: topic-wildcards/1-transform-wildcards.R, data/WHO-COVID-19-global-data.csv
+    output: intermediates/plot_df_GB.csv
+    jobid: 2
+    reason: Missing output files: intermediates/plot_df_GB.csv
+    resources: tmpdir=/tmp
+
+[Thu Oct 31 12:21:43 2024]
+Finished job 2.
+6 of 10 steps (60%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Oct 31 12:21:43 2024]
+localrule plot_individual:
+    input: topic-config/2-plot-config.R, intermediates/plot_df_GB.csv
+    output: results/fig_GB.png
+    jobid: 6
+    reason: Missing output files: results/fig_GB.png; Input files updated by another job: intermediates/plot_df_GB.csv
+    wildcards: country_code=GB
+    resources: tmpdir=/tmp
+
+[Thu Oct 31 12:21:44 2024]
+Finished job 6.
+7 of 10 steps (70%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Oct 31 12:21:44 2024]
+localrule plot_summary:
+    input: topic-wildcards/2-plot-sum.R, intermediates/plot_df_GB.csv, intermediates/plot_df_FR.csv, intermediates/plot_df_DE.csv, intermediates/plot_df_US.csv
+    output: results/fig_summary.png
+    jobid: 1
+    reason: Missing output files: results/fig_summary.png; Input files updated by another job: intermediates/plot_df_FR.csv, intermediates/plot_df_DE.csv, intermediates/plot_df_GB.csv, intermediates/plot_df_US.csv
+    resources: tmpdir=/tmp
+
+[Thu Oct 31 12:21:45 2024]
+Finished job 1.
+8 of 10 steps (80%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Oct 31 12:21:45 2024]
+localrule plot_individual:
+    input: topic-config/2-plot-config.R, intermediates/plot_df_FR.csv
+    output: results/fig_FR.png
+    jobid: 7
+    reason: Missing output files: results/fig_FR.png; Input files updated by another job: intermediates/plot_df_FR.csv
+    wildcards: country_code=FR
+    resources: tmpdir=/tmp
+
+[Thu Oct 31 12:21:46 2024]
+Finished job 7.
+9 of 10 steps (90%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Oct 31 12:21:46 2024]
+localrule all:
+    input: results/fig_summary.png, results/fig_GB.png, results/fig_FR.png, results/fig_DE.png, results/fig_US.png
+    jobid: 0
+    reason: Input files updated by another job: results/fig_FR.png, results/fig_GB.png, results/fig_summary.png, results/fig_DE.png, results/fig_US.png
+    resources: tmpdir=/tmp
+
+[Thu Oct 31 12:21:46 2024]
+Finished job 0.
+10 of 10 steps (100%) done
+Complete log: .snakemake/log/2024-10-31T122137.085832.snakemake.log

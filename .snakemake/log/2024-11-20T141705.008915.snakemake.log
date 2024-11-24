@@ -1,0 +1,12 @@
+host: Fan
+Building DAG of jobs...
+InputFunctionException in rule all in file /home/fan/Applied_HD/AHDS_summative/Snakefile, line 14:
+Error:
+  FileNotFoundError: [Errno 2] No such file or directory: 'data/raw/pmids.xml'
+Wildcards:
+
+Traceback:
+  File "/home/fan/Applied_HD/AHDS_summative/Snakefile", line 17, in <lambda>
+  File "/home/fan/Applied_HD/AHDS_summative/Snakefile", line 43, in get_pmids
+  File "/home/fan/miniconda3/envs/snakemake-practice/lib/python3.12/xml/etree/ElementTree.py", line 1204, in parse
+  File "/home/fan/miniconda3/envs/snakemake-practice/lib/python3.12/xml/etree/ElementTree.py", line 558, in parse (rule all, line 16, /home/fan/Applied_HD/AHDS_summative/Snakefile)

@@ -1,0 +1,36 @@
+host: Fan
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 16
+Rules claiming more threads will be scaled down.
+Job stats:
+job                 count
+----------------  -------
+process_articles        1
+total                   1
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 15:26:20 2024]
+localrule process_articles:
+    input: data/articles/article-data-39562810.xml, data/articles/article-data-39560821.xml, data/articles/article-data-39560319.xml, data/articles/article-data-39559920.xml, data/articles/article-data-39559556.xml, data/articles/article-data-39558820.xml, data/articles/article-data-39558292.xml, data/articles/article-data-39558250.xml, data/articles/article-data-39557995.xml, data/articles/article-data-39557089.xml
+    output: data/raw/articles.tsv
+    jobid: 0
+    reason: Missing output files: data/raw/articles.tsv
+    resources: tmpdir=/tmp
+
+RuleException:
+NameError in file /home/fan/Applied_HD/AHDS_summative/Snakefile, line 47:
+The name 'input_dir' is unknown in this context. Please make sure that you defined that variable. Also note that braces not used for variable access have to be escaped by repeating them, i.e. {{print $1}}
+[Wed Nov 20 15:26:20 2024]
+Error in rule process_articles:
+    jobid: 0
+    input: data/articles/article-data-39562810.xml, data/articles/article-data-39560821.xml, data/articles/article-data-39560319.xml, data/articles/article-data-39559920.xml, data/articles/article-data-39559556.xml, data/articles/article-data-39558820.xml, data/articles/article-data-39558292.xml, data/articles/article-data-39558250.xml, data/articles/article-data-39557995.xml, data/articles/article-data-39557089.xml
+    output: data/raw/articles.tsv
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-11-20T152620.747147.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

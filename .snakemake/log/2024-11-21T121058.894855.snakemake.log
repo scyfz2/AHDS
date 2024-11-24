@@ -1,0 +1,43 @@
+host: Fan
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 16
+Rules claiming more threads will be scaled down.
+Job stats:
+job            count
+-----------  -------
+all                1
+fetch_data         1
+fetch_pmids        1
+total              3
+
+Select jobs to execute...
+Execute 2 jobs...
+
+[Thu Nov 21 12:10:58 2024]
+localrule fetch_data:
+    output: logs/fetch_data.log
+    jobid: 1
+    reason: Missing output files: logs/fetch_data.log
+    resources: tmpdir=/tmp
+
+
+[Thu Nov 21 12:10:58 2024]
+localrule fetch_pmids:
+    output: data/raw/pmids.xml
+    jobid: 2
+    reason: Missing output files: data/raw/pmids.xml
+    resources: tmpdir=/tmp
+
+[Thu Nov 21 12:10:59 2024]
+Finished job 2.
+1 of 3 steps (33%) done
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule fetch_data in file /home/fan/Applied_HD/AHDS_summative/Snakefile, line 38:
+Job 1  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+logs/fetch_data.log (missing locally, parent dir contents: )
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-11-21T121058.894855.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

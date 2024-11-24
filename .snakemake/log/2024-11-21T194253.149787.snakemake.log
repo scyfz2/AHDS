@@ -1,0 +1,56 @@
+host: Fan
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 16
+Rules claiming more threads will be scaled down.
+Job stats:
+job                 count
+----------------  -------
+all                     1
+clean_titles            1
+fetch_data              1
+process_articles        1
+total                   4
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Nov 21 19:42:53 2024]
+localrule fetch_data:
+    output: data/raw/pmids/pmids.xml, logs/fetch_data.log
+    jobid: 1
+    reason: Missing output files: data/raw/pmids/pmids.xml, logs/fetch_data.log
+    resources: tmpdir=/tmp
+
+[Thu Nov 21 19:43:02 2024]
+Finished job 1.
+1 of 4 steps (25%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Nov 21 19:43:02 2024]
+localrule process_articles:
+    input: logs/fetch_data.log
+    output: data/raw/processed/articles.tsv, logs/process_articles.log
+    jobid: 2
+    reason: Missing output files: logs/process_articles.log, data/raw/processed/articles.tsv; Input files updated by another job: logs/fetch_data.log; Code has changed since last execution
+    resources: tmpdir=/tmp
+
+[Thu Nov 21 19:43:02 2024]
+Error in rule process_articles:
+    jobid: 2
+    input: logs/fetch_data.log
+    output: data/raw/processed/articles.tsv, logs/process_articles.log
+    shell:
+        
+        Rscript scripts/process_articles.R data/raw/articles data/raw/processed
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job process_articles since they might be corrupted:
+logs/process_articles.log
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-11-21T194253.149787.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

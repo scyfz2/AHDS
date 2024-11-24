@@ -1,0 +1,25 @@
+host: Fan
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 16
+Rules claiming more threads will be scaled down.
+Job stats:
+job           count
+----------  -------
+fetch_data        1
+total             1
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Sat Nov 23 17:48:22 2024]
+localrule fetch_data:
+    output: data/raw/pmids/pmids.xml, logs/fetch_data.log
+    jobid: 0
+    reason: Missing output files: logs/fetch_data.log, data/raw/pmids/pmids.xml
+    resources: tmpdir=/tmp
+
+[Sat Nov 23 17:48:31 2024]
+Finished job 0.
+1 of 1 steps (100%) done
+Complete log: .snakemake/log/2024-11-23T174822.768536.snakemake.log

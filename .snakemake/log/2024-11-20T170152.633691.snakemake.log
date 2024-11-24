@@ -1,0 +1,67 @@
+host: Fan
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 16
+Rules claiming more threads will be scaled down.
+Job stats:
+job               count
+--------------  -------
+all                   1
+fetch_articles        3
+total                 4
+
+Select jobs to execute...
+Execute 3 jobs...
+
+[Wed Nov 20 17:01:52 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39560319.xml
+    jobid: 4
+    reason: Missing output files: data/articles/article-data-39560319.xml
+    wildcards: pmid=39560319
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 17:01:52 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39560821.xml
+    jobid: 3
+    reason: Missing output files: data/articles/article-data-39560821.xml
+    wildcards: pmid=39560821
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 17:01:52 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39562810.xml
+    jobid: 2
+    reason: Missing output files: data/articles/article-data-39562810.xml
+    wildcards: pmid=39562810
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 17:01:54 2024]
+Finished job 2.
+1 of 4 steps (25%) done
+[Wed Nov 20 17:01:54 2024]
+Finished job 4.
+2 of 4 steps (50%) done
+[Wed Nov 20 17:01:54 2024]
+Finished job 3.
+3 of 4 steps (75%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 17:01:54 2024]
+localrule all:
+    input: data/raw/pmids.xml, data/articles/article-data-39562810.xml, data/articles/article-data-39560821.xml, data/articles/article-data-39560319.xml
+    jobid: 0
+    reason: Input files updated by another job: data/articles/article-data-39560821.xml, data/articles/article-data-39560319.xml, data/articles/article-data-39562810.xml
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 17:01:54 2024]
+Finished job 0.
+4 of 4 steps (100%) done
+Complete log: .snakemake/log/2024-11-20T170152.633691.snakemake.log

@@ -1,0 +1,116 @@
+host: Fan
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job               count
+--------------  -------
+all                   1
+fetch_articles     6486
+total              6487
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 14:12:54 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-38137118.xml
+    jobid: 1993
+    reason: Missing output files: data/articles/article-data-38137118.xml
+    wildcards: pmid=38137118
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 14:12:55 2024]
+Finished job 1993.
+1 of 6487 steps (0.0%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 14:12:55 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-37460909.xml
+    jobid: 2893
+    reason: Missing output files: data/articles/article-data-37460909.xml
+    wildcards: pmid=37460909
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 14:12:55 2024]
+Finished job 2893.
+2 of 6487 steps (0.0%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 14:12:56 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39232616.xml
+    jobid: 433
+    reason: Missing output files: data/articles/article-data-39232616.xml
+    wildcards: pmid=39232616
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 14:12:56 2024]
+Finished job 433.
+3 of 6487 steps (0.0%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 14:12:56 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39299642.xml
+    jobid: 356
+    reason: Missing output files: data/articles/article-data-39299642.xml
+    wildcards: pmid=39299642
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 14:12:57 2024]
+Finished job 356.
+4 of 6487 steps (0.1%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 14:12:57 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-33568362.xml
+    jobid: 6416
+    reason: Missing output files: data/articles/article-data-33568362.xml
+    wildcards: pmid=33568362
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 14:12:58 2024]
+Finished job 6416.
+5 of 6487 steps (0.1%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 14:12:58 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-38526160.xml
+    jobid: 1419
+    reason: Missing output files: data/articles/article-data-38526160.xml
+    wildcards: pmid=38526160
+    resources: tmpdir=/tmp
+
+Will exit after finishing currently running jobs (scheduler).
+[Wed Nov 20 23:51:48 2024]
+Error in rule fetch_articles:
+    jobid: 1419
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-38526160.xml
+    shell:
+        
+        bash scripts/fetch_articles.sh "38526160" "data/articles/article-data-38526160.xml"
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Will exit after finishing currently running jobs (scheduler).
+Shutting down, this might take some time.
+Complete log: .snakemake/log/2024-11-20T141252.451644.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

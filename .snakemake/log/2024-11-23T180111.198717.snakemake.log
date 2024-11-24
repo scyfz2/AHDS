@@ -1,0 +1,26 @@
+host: Fan
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 16
+Rules claiming more threads will be scaled down.
+Job stats:
+job               count
+--------------  -------
+word_frequency        1
+total                 1
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Sat Nov 23 18:01:11 2024]
+localrule word_frequency:
+    input: data/clean/cleaned_articles.tsv
+    output: plots/Word_Frequency_Trends_2019-2026.png, plots/Thematic_Word_Frequency_Trends_2019-2026.png
+    jobid: 0
+    reason: Missing output files: plots/Word_Frequency_Trends_2019-2026.png, plots/Thematic_Word_Frequency_Trends_2019-2026.png
+    resources: tmpdir=/tmp
+
+[Sat Nov 23 18:01:14 2024]
+Finished job 0.
+1 of 1 steps (100%) done
+Complete log: .snakemake/log/2024-11-23T180111.198717.snakemake.log

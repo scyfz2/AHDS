@@ -1,0 +1,26 @@
+host: Fan
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 16
+Rules claiming more threads will be scaled down.
+Job stats:
+job      count
+-----  -------
+LDA          1
+total        1
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Sat Nov 23 18:02:15 2024]
+localrule LDA:
+    input: data/clean/cleaned_articles.tsv
+    output: plots/Top_Terms_Excluding_COVID.png, plots/Top_Terms_with_COVID.png
+    jobid: 0
+    reason: Missing output files: plots/Top_Terms_with_COVID.png, plots/Top_Terms_Excluding_COVID.png
+    resources: tmpdir=/tmp
+
+[Sat Nov 23 18:02:18 2024]
+Finished job 0.
+1 of 1 steps (100%) done
+Complete log: .snakemake/log/2024-11-23T180215.410437.snakemake.log

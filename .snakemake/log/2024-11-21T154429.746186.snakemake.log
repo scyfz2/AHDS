@@ -1,0 +1,9 @@
+host: Fan
+Building DAG of jobs...
+InputFunctionException in rule process_articles in file /home/fan/Applied_HD/AHDS_summative/Snakefile, line 52:
+Error:
+  AttributeError: 'Wildcards' object has no attribute 'file'
+Wildcards:
+
+Traceback:
+  File "/home/fan/Applied_HD/AHDS_summative/Snakefile", line 54, in <lambda> (rule process_articles, line 73, /home/fan/Applied_HD/AHDS_summative/Snakefile)

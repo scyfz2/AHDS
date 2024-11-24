@@ -1,0 +1,36 @@
+host: Fan
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 16
+Rules claiming more threads will be scaled down.
+Job stats:
+job             count
+------------  -------
+clean_titles        1
+total               1
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Nov 21 20:04:38 2024]
+localrule clean_titles:
+    input: logs/process_articles.log, data/raw/processed/articles.tsv
+    output: data/clean/cleaned_articles.tsv, logs/clean_titles.log
+    jobid: 0
+    reason: Missing output files: data/clean/cleaned_articles.tsv, logs/clean_titles.log
+    resources: tmpdir=/tmp
+
+RuleException:
+NameError in file /home/fan/Applied_HD/AHDS_summative/Snakefile, line 74:
+The name 'PROCESSED_DIR' is unknown in this context. Please make sure that you defined that variable. Also note that braces not used for variable access have to be escaped by repeating them, i.e. {{print $1}}
+[Thu Nov 21 20:04:38 2024]
+Error in rule clean_titles:
+    jobid: 0
+    input: logs/process_articles.log, data/raw/processed/articles.tsv
+    output: data/clean/cleaned_articles.tsv, logs/clean_titles.log
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-11-21T200438.719366.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

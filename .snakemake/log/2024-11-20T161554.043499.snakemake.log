@@ -1,0 +1,29 @@
+host: Fan
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 16
+Rules claiming more threads will be scaled down.
+Job stats:
+job                 count
+----------------  -------
+all                     1
+fetch_articles          1
+process_articles        1
+total                   3
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 16:15:54 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39562810.xml, data/articles/article-data-39560821.xml, data/articles/article-data-39560319.xml, data/articles/article-data-39559920.xml, data/articles/article-data-39559556.xml, data/articles/article-data-39558820.xml, data/articles/article-data-39558292.xml, data/articles/article-data-39558250.xml, data/articles/article-data-39557995.xml, data/articles/article-data-39557089.xml
+    jobid: 2
+    reason: Missing output files: data/articles/article-data-39557995.xml, data/articles/article-data-39558292.xml, data/articles/article-data-39558250.xml, data/articles/article-data-39558820.xml, data/articles/article-data-39562810.xml, data/articles/article-data-39560821.xml, data/articles/article-data-39560319.xml, data/articles/article-data-39557089.xml, data/articles/article-data-39559556.xml, data/articles/article-data-39559920.xml
+    resources: tmpdir=/tmp
+
+RuleException in rule fetch_articles in file /home/fan/Applied_HD/AHDS_summative/Snakefile, line 46:
+AttributeError: 'Wildcards' object has no attribute 'pmid', when formatting the following:
+
+        bash scripts/fetch_articles.sh {wildcards.pmid} {output}
+        

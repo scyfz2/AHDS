@@ -1,0 +1,55 @@
+host: Fan
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 16
+Rules claiming more threads will be scaled down.
+Job stats:
+job                 count
+----------------  -------
+all                     1
+clean_titles            1
+process_articles        1
+total                   3
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Nov 21 19:04:07 2024]
+localrule process_articles:
+    input: logs/fetch_data.log, data/articles/article-data-39569188.xml, data/articles/article-data-39569098.xml, data/articles/article-data-39568467.xml, data/articles/article-data-39562810.xml, data/articles/article-data-39560821.xml, data/articles/article-data-39560319.xml, data/articles/article-data-39559920.xml, data/articles/article-data-39559556.xml, data/articles/article-data-39558820.xml, data/articles/article-data-39558292.xml
+    output: data/processed/articles.tsv, logs/process_articles.log
+    jobid: 2
+    reason: Updated input files: data/articles/article-data-39558292.xml, data/articles/article-data-39558820.xml, data/articles/article-data-39560821.xml, data/articles/article-data-39559556.xml, data/articles/article-data-39562810.xml, logs/fetch_data.log, data/articles/article-data-39568467.xml, data/articles/article-data-39559920.xml, data/articles/article-data-39569098.xml, data/articles/article-data-39560319.xml, data/articles/article-data-39569188.xml
+    resources: tmpdir=/tmp
+
+[Thu Nov 21 19:04:07 2024]
+Finished job 2.
+1 of 3 steps (33%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Nov 21 19:04:07 2024]
+localrule clean_titles:
+    input: logs/process_articles.log, data/processed/articles.tsv
+    output: data/processed/cleaned_articles.tsv, logs/clean_titles.log
+    jobid: 3
+    reason: Input files updated by another job: logs/process_articles.log, data/processed/articles.tsv
+    resources: tmpdir=/tmp
+
+[Thu Nov 21 19:04:09 2024]
+Finished job 3.
+2 of 3 steps (67%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Nov 21 19:04:09 2024]
+localrule all:
+    input: data/raw/pmids.xml, data/articles/article-data-39569188.xml, data/articles/article-data-39569098.xml, data/articles/article-data-39568467.xml, data/articles/article-data-39562810.xml, data/articles/article-data-39560821.xml, data/articles/article-data-39560319.xml, data/articles/article-data-39559920.xml, data/articles/article-data-39559556.xml, data/articles/article-data-39558820.xml, data/articles/article-data-39558292.xml, data/processed/articles.tsv, data/processed/cleaned_articles.tsv
+    jobid: 0
+    reason: Input files updated by another job: data/processed/cleaned_articles.tsv, data/processed/articles.tsv
+    resources: tmpdir=/tmp
+
+[Thu Nov 21 19:04:09 2024]
+Finished job 0.
+3 of 3 steps (100%) done
+Complete log: .snakemake/log/2024-11-21T190407.009668.snakemake.log

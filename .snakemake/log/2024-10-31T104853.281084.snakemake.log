@@ -1,0 +1,41 @@
+host: Fan
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 16
+Rules claiming more threads will be scaled down.
+Job stats:
+job          count
+---------  -------
+plot             1
+transform        1
+total            2
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Oct 31 10:48:53 2024]
+localrule transform:
+    input: data/WHO-COVID-19-global-data.csv
+    output: intermediates/plot_df.csv
+    jobid: 1
+    reason: Missing output files: intermediates/plot_df.csv
+    resources: tmpdir=/tmp
+
+[Thu Oct 31 10:48:54 2024]
+Finished job 1.
+1 of 2 steps (50%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Oct 31 10:48:54 2024]
+localrule plot:
+    input: intermediates/plot_df.csv
+    output: results/fig-simple.png
+    jobid: 0
+    reason: Missing output files: results/fig-simple.png; Input files updated by another job: intermediates/plot_df.csv
+    resources: tmpdir=/tmp
+
+[Thu Oct 31 10:48:55 2024]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: .snakemake/log/2024-10-31T104853.281084.snakemake.log

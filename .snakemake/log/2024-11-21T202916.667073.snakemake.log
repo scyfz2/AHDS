@@ -1,0 +1,6 @@
+host: Fan
+Building DAG of jobs...
+MissingInputException in rule all in file /home/fan/Applied_HD/AHDS_summative/Snakefile, line 33:
+Missing input files for rule all:
+    affected files:
+        data/clean/cleaned_articles.tsv

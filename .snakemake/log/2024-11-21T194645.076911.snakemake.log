@@ -1,0 +1,66 @@
+host: Fan
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 16
+Rules claiming more threads will be scaled down.
+Job stats:
+job                 count
+----------------  -------
+all                     1
+clean_titles            1
+fetch_data              1
+process_articles        1
+total                   4
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Nov 21 19:46:45 2024]
+localrule fetch_data:
+    output: data/raw/pmids/pmids.xml, logs/fetch_data.log
+    jobid: 1
+    reason: Missing output files: data/raw/pmids/pmids.xml, logs/fetch_data.log
+    resources: tmpdir=/tmp
+
+[Thu Nov 21 19:46:49 2024]
+Finished job 1.
+1 of 4 steps (25%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Nov 21 19:46:49 2024]
+localrule process_articles:
+    input: logs/fetch_data.log
+    output: data/raw/processed/articles.tsv, logs/process_articles.log
+    jobid: 2
+    reason: Missing output files: data/raw/processed/articles.tsv, logs/process_articles.log; Input files updated by another job: logs/fetch_data.log
+    resources: tmpdir=/tmp
+
+[Thu Nov 21 19:46:49 2024]
+Finished job 2.
+2 of 4 steps (50%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Nov 21 19:46:49 2024]
+localrule clean_titles:
+    input: logs/process_articles.log, data/raw/processed/articles.tsv
+    output: data/clean/cleaned_articles.tsv, logs/clean_titles.log
+    jobid: 3
+    reason: Missing output files: data/clean/cleaned_articles.tsv; Input files updated by another job: data/raw/processed/articles.tsv, logs/process_articles.log
+    resources: tmpdir=/tmp
+
+RuleException:
+NameError in file /home/fan/Applied_HD/AHDS_summative/Snakefile, line 74:
+The name 'PROCESSED_DIR' is unknown in this context. Please make sure that you defined that variable. Also note that braces not used for variable access have to be escaped by repeating them, i.e. {{print $1}}
+[Thu Nov 21 19:46:49 2024]
+Error in rule clean_titles:
+    jobid: 3
+    input: logs/process_articles.log, data/raw/processed/articles.tsv
+    output: data/clean/cleaned_articles.tsv, logs/clean_titles.log
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-11-21T194645.076911.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

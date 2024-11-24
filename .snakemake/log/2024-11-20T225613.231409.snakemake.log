@@ -1,0 +1,447 @@
+host: Fan
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 16
+Rules claiming more threads will be scaled down.
+Job stats:
+job               count
+--------------  -------
+all                   1
+fetch_articles      300
+total               301
+
+Select jobs to execute...
+Execute 16 jobs...
+
+[Wed Nov 20 22:56:13 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39560821.xml
+    jobid: 3
+    reason: Missing output files: data/articles/article-data-39560821.xml
+    wildcards: pmid=39560821
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 22:56:13 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39512484.xml
+    jobid: 63
+    reason: Missing output files: data/articles/article-data-39512484.xml
+    wildcards: pmid=39512484
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 22:56:13 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39469684.xml
+    jobid: 123
+    reason: Missing output files: data/articles/article-data-39469684.xml
+    wildcards: pmid=39469684
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 22:56:13 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39363376.xml
+    jobid: 265
+    reason: Missing output files: data/articles/article-data-39363376.xml
+    wildcards: pmid=39363376
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 22:56:13 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39482218.xml
+    jobid: 110
+    reason: Missing output files: data/articles/article-data-39482218.xml
+    wildcards: pmid=39482218
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 22:56:13 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39527314.xml
+    jobid: 50
+    reason: Missing output files: data/articles/article-data-39527314.xml
+    wildcards: pmid=39527314
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 22:56:13 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39550693.xml
+    jobid: 20
+    reason: Missing output files: data/articles/article-data-39550693.xml
+    wildcards: pmid=39550693
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 22:56:13 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39499692.xml
+    jobid: 80
+    reason: Missing output files: data/articles/article-data-39499692.xml
+    wildcards: pmid=39499692
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 22:56:13 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39454992.xml
+    jobid: 140
+    reason: Missing output files: data/articles/article-data-39454992.xml
+    wildcards: pmid=39454992
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 22:56:13 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39434281.xml
+    jobid: 170
+    reason: Missing output files: data/articles/article-data-39434281.xml
+    wildcards: pmid=39434281
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 22:56:13 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39416495.xml
+    jobid: 200
+    reason: Missing output files: data/articles/article-data-39416495.xml
+    wildcards: pmid=39416495
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 22:56:13 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39388619.xml
+    jobid: 230
+    reason: Missing output files: data/articles/article-data-39388619.xml
+    wildcards: pmid=39388619
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 22:56:13 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39367848.xml
+    jobid: 260
+    reason: Missing output files: data/articles/article-data-39367848.xml
+    wildcards: pmid=39367848
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 22:56:13 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39348850.xml
+    jobid: 290
+    reason: Missing output files: data/articles/article-data-39348850.xml
+    wildcards: pmid=39348850
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 22:56:13 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39490617.xml
+    jobid: 93
+    reason: Missing output files: data/articles/article-data-39490617.xml
+    wildcards: pmid=39490617
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 22:56:13 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39536123.xml
+    jobid: 33
+    reason: Missing output files: data/articles/article-data-39536123.xml
+    wildcards: pmid=39536123
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:56:16 2024]
+Finished job 3.
+1 of 301 steps (0.3%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:56:16 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39371163.xml
+    jobid: 252
+    reason: Missing output files: data/articles/article-data-39371163.xml
+    wildcards: pmid=39371163
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:56:19 2024]
+Finished job 63.
+2 of 301 steps (1%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:56:19 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39352145.xml
+    jobid: 282
+    reason: Missing output files: data/articles/article-data-39352145.xml
+    wildcards: pmid=39352145
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:56:23 2024]
+Finished job 123.
+3 of 301 steps (1%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:56:23 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39518964.xml
+    jobid: 55
+    reason: Missing output files: data/articles/article-data-39518964.xml
+    wildcards: pmid=39518964
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:56:26 2024]
+Finished job 265.
+4 of 301 steps (1%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:56:26 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39477428.xml
+    jobid: 115
+    reason: Missing output files: data/articles/article-data-39477428.xml
+    wildcards: pmid=39477428
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:56:29 2024]
+Finished job 110.
+5 of 301 steps (2%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:56:29 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39451477.xml
+    jobid: 143
+    reason: Missing output files: data/articles/article-data-39451477.xml
+    wildcards: pmid=39451477
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 22:56:33 2024]
+Finished job 50.
+6 of 301 steps (2%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 22:56:33 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39433942.xml
+    jobid: 173
+    reason: Missing output files: data/articles/article-data-39433942.xml
+    wildcards: pmid=39433942
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 23:51:48 2024]
+[Wed Nov 20 23:51:48 2024]
+[Wed Nov 20 23:51:48 2024]
+[Wed Nov 20 23:51:48 2024]
+Error in rule fetch_articles:
+    jobid: 290
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39348850.xml
+    shell:
+        
+        bash scripts/fetch_articles.sh "39348850" "data/articles/article-data-39348850.xml"
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Wed Nov 20 23:51:48 2024]
+Error in rule fetch_articles:
+    jobid: 33
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39536123.xml
+    shell:
+        
+        bash scripts/fetch_articles.sh "39536123" "data/articles/article-data-39536123.xml"
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Wed Nov 20 23:51:48 2024]
+[Wed Nov 20 23:51:48 2024]
+[Wed Nov 20 23:51:48 2024]
+[Wed Nov 20 23:51:48 2024]
+[Wed Nov 20 23:51:48 2024]
+Error in rule fetch_articles:
+    jobid: 143
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39451477.xml
+    shell:
+        
+        bash scripts/fetch_articles.sh "39451477" "data/articles/article-data-39451477.xml"
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Wed Nov 20 23:51:48 2024]
+Error in rule fetch_articles:
+    jobid: 170
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39434281.xml
+    shell:
+        
+        bash scripts/fetch_articles.sh "39434281" "data/articles/article-data-39434281.xml"
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Wed Nov 20 23:51:48 2024]
+[Wed Nov 20 23:51:48 2024]
+[Wed Nov 20 23:51:48 2024]
+[Wed Nov 20 23:51:48 2024]
+Error in rule fetch_articles:
+    jobid: 20
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39550693.xml
+    shell:
+        
+        bash scripts/fetch_articles.sh "39550693" "data/articles/article-data-39550693.xml"
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule fetch_articles:
+    jobid: 115
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39477428.xml
+    shell:
+        
+        bash scripts/fetch_articles.sh "39477428" "data/articles/article-data-39477428.xml"
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Wed Nov 20 23:51:48 2024]
+Error in rule fetch_articles:
+    jobid: 55
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39518964.xml
+    shell:
+        
+        bash scripts/fetch_articles.sh "39518964" "data/articles/article-data-39518964.xml"
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule fetch_articles:
+    jobid: 252
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39371163.xml
+    shell:
+        
+        bash scripts/fetch_articles.sh "39371163" "data/articles/article-data-39371163.xml"
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Will exit after finishing currently running jobs (scheduler).
+Error in rule fetch_articles:
+    jobid: 230
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39388619.xml
+    shell:
+        
+        bash scripts/fetch_articles.sh "39388619" "data/articles/article-data-39388619.xml"
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule fetch_articles:
+    jobid: 80
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39499692.xml
+    shell:
+        
+        bash scripts/fetch_articles.sh "39499692" "data/articles/article-data-39499692.xml"
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule fetch_articles:
+    jobid: 282
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39352145.xml
+    shell:
+        
+        bash scripts/fetch_articles.sh "39352145" "data/articles/article-data-39352145.xml"
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule fetch_articles:
+    jobid: 93
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39490617.xml
+    shell:
+        
+        bash scripts/fetch_articles.sh "39490617" "data/articles/article-data-39490617.xml"
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule fetch_articles:
+    jobid: 260
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39367848.xml
+    shell:
+        
+        bash scripts/fetch_articles.sh "39367848" "data/articles/article-data-39367848.xml"
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule fetch_articles:
+    jobid: 200
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39416495.xml
+    shell:
+        
+        bash scripts/fetch_articles.sh "39416495" "data/articles/article-data-39416495.xml"
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule fetch_articles:
+    jobid: 173
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39433942.xml
+    shell:
+        
+        bash scripts/fetch_articles.sh "39433942" "data/articles/article-data-39433942.xml"
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule fetch_articles:
+    jobid: 140
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39454992.xml
+    shell:
+        
+        bash scripts/fetch_articles.sh "39454992" "data/articles/article-data-39454992.xml"
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Will exit after finishing currently running jobs (scheduler).
+Will exit after finishing currently running jobs (scheduler).
+Shutting down, this might take some time.
+Complete log: .snakemake/log/2024-11-20T225613.231409.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

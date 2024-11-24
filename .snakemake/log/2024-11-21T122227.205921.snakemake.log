@@ -1,0 +1,26 @@
+host: Fan
+Building DAG of jobs...
+MissingInputException in rule process_articles in file /home/fan/Applied_HD/AHDS_summative/Snakefile, line 49:
+Missing input files for rule process_articles:
+    output: data/processed/articles.tsv
+    affected files:
+        data/articles/article-data-39565774.xml
+        data/articles/article-data-39565217.xml
+        data/articles/article-data-39565535.xml
+        data/articles/article-data-39563260.xml
+        data/articles/article-data-39562469.xml
+        data/articles/article-data-39569098.xml
+        data/articles/article-data-39566066.xml
+        data/articles/article-data-39563758.xml
+        data/articles/article-data-39564006.xml
+        data/articles/article-data-39562802.xml
+        data/articles/article-data-39569188.xml
+        data/articles/article-data-39563149.xml
+        data/articles/article-data-39562810.xml
+        data/articles/article-data-39568226.xml
+        data/articles/article-data-39562432.xml
+        data/articles/article-data-39564900.xml
+        data/articles/article-data-39564795.xml
+        data/articles/article-data-39562312.xml
+        data/articles/article-data-39562725.xml
+        data/articles/article-data-39568467.xml

@@ -1,0 +1,96 @@
+host: Fan
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 16
+Rules claiming more threads will be scaled down.
+Job stats:
+job                 count
+----------------  -------
+LDA                     1
+all                     1
+clean_titles            1
+fetch_data              1
+process_articles        1
+word_frequency          1
+total                   6
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Sat Nov 23 18:17:48 2024]
+localrule fetch_data:
+    output: data/raw/pmids/pmids.xml, logs/fetch_data.log
+    jobid: 1
+    reason: Missing output files: logs/fetch_data.log, data/raw/pmids/pmids.xml
+    resources: tmpdir=/tmp
+
+[Sat Nov 23 18:18:02 2024]
+Finished job 1.
+1 of 6 steps (17%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Sat Nov 23 18:18:02 2024]
+localrule process_articles:
+    input: logs/fetch_data.log, data/raw/pmids/pmids.xml
+    output: data/raw/processed/articles.tsv, logs/process_articles.log
+    jobid: 2
+    reason: Missing output files: data/raw/processed/articles.tsv, logs/process_articles.log; Input files updated by another job: logs/fetch_data.log, data/raw/pmids/pmids.xml
+    resources: tmpdir=/tmp
+
+[Sat Nov 23 18:18:03 2024]
+Finished job 2.
+2 of 6 steps (33%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Sat Nov 23 18:18:03 2024]
+localrule clean_titles:
+    input: logs/process_articles.log, data/raw/processed/articles.tsv
+    output: data/clean/cleaned_articles.tsv, logs/clean_titles.log
+    jobid: 3
+    reason: Missing output files: data/clean/cleaned_articles.tsv; Input files updated by another job: data/raw/processed/articles.tsv, logs/process_articles.log
+    resources: tmpdir=/tmp
+
+[Sat Nov 23 18:18:05 2024]
+Finished job 3.
+3 of 6 steps (50%) done
+Select jobs to execute...
+Execute 2 jobs...
+
+[Sat Nov 23 18:18:05 2024]
+localrule LDA:
+    input: data/clean/cleaned_articles.tsv
+    output: plots/Top_Terms_Excluding_COVID.png, plots/Top_Terms_with_COVID.png
+    jobid: 4
+    reason: Missing output files: plots/Top_Terms_with_COVID.png, plots/Top_Terms_Excluding_COVID.png; Input files updated by another job: data/clean/cleaned_articles.tsv
+    resources: tmpdir=/tmp
+
+[Sat Nov 23 18:18:05 2024]
+localrule word_frequency:
+    input: data/clean/cleaned_articles.tsv
+    output: plots/Word_Frequency_Trends_2019-2026.png, plots/Thematic_Word_Frequency_Trends_2019-2026.png
+    jobid: 5
+    reason: Missing output files: plots/Word_Frequency_Trends_2019-2026.png, plots/Thematic_Word_Frequency_Trends_2019-2026.png; Input files updated by another job: data/clean/cleaned_articles.tsv
+    resources: tmpdir=/tmp
+
+[Sat Nov 23 18:18:07 2024]
+Finished job 5.
+4 of 6 steps (67%) done
+[Sat Nov 23 18:18:08 2024]
+Finished job 4.
+5 of 6 steps (83%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Sat Nov 23 18:18:08 2024]
+localrule all:
+    input: data/raw/pmids/pmids.xml, data/raw/processed/articles.tsv, data/clean/cleaned_articles.tsv, plots/Top_Terms_Excluding_COVID.png, plots/Top_Terms_with_COVID.png, plots/Word_Frequency_Trends_2019-2026.png, plots/Thematic_Word_Frequency_Trends_2019-2026.png
+    jobid: 0
+    reason: Input files updated by another job: plots/Word_Frequency_Trends_2019-2026.png, data/raw/pmids/pmids.xml, plots/Top_Terms_with_COVID.png, data/clean/cleaned_articles.tsv, data/raw/processed/articles.tsv, plots/Top_Terms_Excluding_COVID.png, plots/Thematic_Word_Frequency_Trends_2019-2026.png
+    resources: tmpdir=/tmp
+
+[Sat Nov 23 18:18:08 2024]
+Finished job 0.
+6 of 6 steps (100%) done
+Complete log: .snakemake/log/2024-11-23T181748.126378.snakemake.log

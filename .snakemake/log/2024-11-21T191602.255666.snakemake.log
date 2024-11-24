@@ -1,0 +1,41 @@
+host: Fan
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 16
+Rules claiming more threads will be scaled down.
+Job stats:
+job                 count
+----------------  -------
+clean_titles            1
+process_articles        1
+total                   2
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Nov 21 19:16:02 2024]
+localrule process_articles:
+    input: logs/fetch_data.log, data/articles/article-data-39569188.xml, data/articles/article-data-39569098.xml, data/articles/article-data-39568467.xml, data/articles/article-data-39562810.xml, data/articles/article-data-39560821.xml, data/articles/article-data-39560319.xml, data/articles/article-data-39559920.xml, data/articles/article-data-39559556.xml, data/articles/article-data-39558820.xml, data/articles/article-data-39558292.xml, data/articles/article-data-39558250.xml, data/articles/article-data-39557995.xml, data/articles/article-data-39556251.xml, data/articles/article-data-39554298.xml, data/articles/article-data-39553000.xml, data/articles/article-data-39552393.xml, data/articles/article-data-39551951.xml, data/articles/article-data-39551591.xml, data/articles/article-data-39551439.xml, data/articles/article-data-39550783.xml, data/articles/article-data-39550693.xml, data/articles/article-data-39550105.xml, data/articles/article-data-39549937.xml, data/articles/article-data-39549783.xml, data/articles/article-data-39547729.xml, data/articles/article-data-39545965.xml, data/articles/article-data-39544193.xml, data/articles/article-data-39543596.xml, data/articles/article-data-39542232.xml, data/articles/article-data-39540209.xml, data/articles/article-data-39537445.xml, data/articles/article-data-39537389.xml, data/articles/article-data-39536394.xml, data/articles/article-data-39536123.xml, data/articles/article-data-39536122.xml, data/articles/article-data-39536121.xml, data/articles/article-data-39536120.xml, data/articles/article-data-39536118.xml, data/articles/article-data-39536117.xml, data/articles/article-data-39536116.xml, data/articles/article-data-39534773.xml, data/articles/article-data-39534771.xml, data/articles/article-data-39529893.xml, data/articles/article-data-39526116.xml, data/articles/article-data-39524912.xml, data/articles/article-data-39524607.xml, data/articles/article-data-39524261.xml, data/articles/article-data-39532773.xml, data/articles/article-data-39531278.xml, data/articles/article-data-39529266.xml
+    output: data/processed/articles.tsv, logs/process_articles.log
+    jobid: 1
+    reason: Set of input files has changed since last execution
+    resources: tmpdir=/tmp
+
+[Thu Nov 21 19:16:02 2024]
+Finished job 1.
+1 of 2 steps (50%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Nov 21 19:16:02 2024]
+localrule clean_titles:
+    input: logs/process_articles.log, data/processed/articles.tsv
+    output: data/processed/cleaned_articles.tsv, logs/clean_titles.log
+    jobid: 0
+    reason: Input files updated by another job: data/processed/articles.tsv, logs/process_articles.log
+    resources: tmpdir=/tmp
+
+[Thu Nov 21 19:16:04 2024]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: .snakemake/log/2024-11-21T191602.255666.snakemake.log

@@ -1,0 +1,173 @@
+host: Fan
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 16
+Rules claiming more threads will be scaled down.
+Job stats:
+job                 count
+----------------  -------
+all                     1
+fetch_articles         10
+process_articles        1
+total                  12
+
+Select jobs to execute...
+Execute 10 jobs...
+
+[Wed Nov 20 15:54:31 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39560319.xml
+    jobid: 5
+    reason: Missing output files: data/articles/article-data-39560319.xml
+    wildcards: pmid=39560319
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 15:54:31 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39558820.xml
+    jobid: 8
+    reason: Missing output files: data/articles/article-data-39558820.xml
+    wildcards: pmid=39558820
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 15:54:31 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39557089.xml
+    jobid: 12
+    reason: Missing output files: data/articles/article-data-39557089.xml
+    wildcards: pmid=39557089
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 15:54:31 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39560821.xml
+    jobid: 4
+    reason: Missing output files: data/articles/article-data-39560821.xml
+    wildcards: pmid=39560821
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 15:54:31 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39559556.xml
+    jobid: 7
+    reason: Missing output files: data/articles/article-data-39559556.xml
+    wildcards: pmid=39559556
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 15:54:31 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39557995.xml
+    jobid: 11
+    reason: Missing output files: data/articles/article-data-39557995.xml
+    wildcards: pmid=39557995
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 15:54:31 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39562810.xml
+    jobid: 2
+    reason: Missing output files: data/articles/article-data-39562810.xml
+    wildcards: pmid=39562810
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 15:54:31 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39559920.xml
+    jobid: 6
+    reason: Missing output files: data/articles/article-data-39559920.xml
+    wildcards: pmid=39559920
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 15:54:31 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39558250.xml
+    jobid: 10
+    reason: Missing output files: data/articles/article-data-39558250.xml
+    wildcards: pmid=39558250
+    resources: tmpdir=/tmp
+
+
+[Wed Nov 20 15:54:31 2024]
+localrule fetch_articles:
+    input: data/raw/pmids.xml
+    output: data/articles/article-data-39558292.xml
+    jobid: 9
+    reason: Missing output files: data/articles/article-data-39558292.xml
+    wildcards: pmid=39558292
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 15:54:33 2024]
+Finished job 11.
+1 of 12 steps (8%) done
+[Wed Nov 20 15:54:33 2024]
+Finished job 12.
+2 of 12 steps (17%) done
+[Wed Nov 20 15:54:33 2024]
+Finished job 2.
+3 of 12 steps (25%) done
+[Wed Nov 20 15:54:33 2024]
+Finished job 8.
+4 of 12 steps (33%) done
+[Wed Nov 20 15:54:33 2024]
+Finished job 5.
+5 of 12 steps (42%) done
+[Wed Nov 20 15:54:33 2024]
+Finished job 6.
+6 of 12 steps (50%) done
+[Wed Nov 20 15:54:33 2024]
+Finished job 10.
+7 of 12 steps (58%) done
+[Wed Nov 20 15:54:33 2024]
+Finished job 4.
+8 of 12 steps (67%) done
+[Wed Nov 20 15:54:33 2024]
+Finished job 9.
+9 of 12 steps (75%) done
+[Wed Nov 20 15:54:33 2024]
+Finished job 7.
+10 of 12 steps (83%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 15:54:33 2024]
+localrule process_articles:
+    input: data/articles/article-data-39562810.xml, data/articles/article-data-39560821.xml, data/articles/article-data-39560319.xml, data/articles/article-data-39559920.xml, data/articles/article-data-39559556.xml, data/articles/article-data-39558820.xml, data/articles/article-data-39558292.xml, data/articles/article-data-39558250.xml, data/articles/article-data-39557995.xml, data/articles/article-data-39557089.xml
+    output: data/processed/articles.tsv
+    jobid: 1
+    reason: Input files updated by another job: data/articles/article-data-39559556.xml, data/articles/article-data-39560319.xml, data/articles/article-data-39557995.xml, data/articles/article-data-39558820.xml, data/articles/article-data-39562810.xml, data/articles/article-data-39558250.xml, data/articles/article-data-39558292.xml, data/articles/article-data-39559920.xml, data/articles/article-data-39560821.xml, data/articles/article-data-39557089.xml; Set of input files has changed since last execution
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 15:54:33 2024]
+Finished job 1.
+11 of 12 steps (92%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 20 15:54:33 2024]
+localrule all:
+    input: data/processed/articles.tsv
+    jobid: 0
+    reason: Input files updated by another job: data/processed/articles.tsv
+    resources: tmpdir=/tmp
+
+[Wed Nov 20 15:54:33 2024]
+Finished job 0.
+12 of 12 steps (100%) done
+Complete log: .snakemake/log/2024-11-20T155431.609983.snakemake.log

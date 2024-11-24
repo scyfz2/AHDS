@@ -1,0 +1,6 @@
+host: Fan
+Building DAG of jobs...
+MissingInputException in rule all in file /home/fan/Applied_HD/AHDS_summative/Snakefile, line 33:
+Missing input files for rule all:
+    affected files:
+        plots/Top_Terms_Excluding_COVID.pngplots/Top_Terms_with_COVID.pngplots/Word_Frequency_Trends_2019-2026.pngplots/Thematic_Word_Frequency_Trends_2019-2026.png

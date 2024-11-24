@@ -1,0 +1,6 @@
+keyword: "long covid"      # Search for keyword
+retmax: 16      # Maximum number of articles returned
+raw_dir: "data/raw/pmids"      # The directory where the raw data is stored
+articles_dir: "data/raw/articles"      # Directory for article details
+processed_dir: "data/raw/processed"      # The output directory of the processed XML file
+clean_dir: "data/clean"      # The output directory for the processed XML files
