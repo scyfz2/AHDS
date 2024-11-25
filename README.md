@@ -38,7 +38,13 @@ To run the entire pipeline, use the provided `Snakefile` which orchestrates the 
 snakemake
 ```
 
-*Before running snakemake, check the `config` file to make sure the request data is correct.*
+If you want to do a commit run in BlueCrystal, run run.sh.
+
+```
+sbatch run.sh
+```
+
+*Before running, check the `config` file to make sure the request data is correct.*
 
 Alternatively, individual components can be run as follows:
 
@@ -93,6 +99,7 @@ Logs for the data fetching process can be found in the `logs` directory, providi
 
 | Date       | Commit Message                                           |
 |------------|----------------------------------------------------------|
+| Nov 25, 2024 | Upload SLURM file|
 | Nov 24, 2024 | Record tag: v2|
 | Nov 24, 2024 | Add comments and complete the user manual|
 | Nov 23, 2024 | Completed step 4 of the project                         |
