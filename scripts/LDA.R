@@ -103,7 +103,7 @@ annual_topic_distribution <- annual_topic_distribution %>%
   filter(year >= 2019 & year <= 2026)
 
 # Plotting topic trends over time with updated y-axis for article counts
-ggplot(annual_topic_distribution, aes(x = year)) +
+gg <- ggplot(annual_topic_distribution, aes(x = year)) +
   geom_line(aes(y = `1`, colour = "Topic 1"), linewidth = 1.2) +
   geom_line(aes(y = `2`, colour = "Topic 2"), linewidth = 1.2) +
   geom_line(aes(y = `3`, colour = "Topic 3"), linewidth = 1.2) +

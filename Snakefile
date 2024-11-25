@@ -20,8 +20,8 @@ rule all:
         os.path.join(RAW_DIR, "pmids.xml"),
         os.path.join(PROCESSED_DIR, "articles.tsv"),
         os.path.join(CLEAN_DIR, "cleaned_articles.tsv"),
-        "plots/Top_Terms_Excluding_COVID.png",
-        "plots/Top_Terms_with_COVID.png",
+        "plots/Top_Terms_in_Each_Topic.png",
+        "plots/Topic_Trends_2019_2026.png",
         "plots/Word_Frequency_Trends_2019-2026.png",
         "plots/Thematic_Word_Frequency_Trends_2019-2026.png"
 
@@ -95,8 +95,8 @@ rule LDA:
     input:
         os.path.join(CLEAN_DIR, "cleaned_articles.tsv")
     output:
-        "plots/Top_Terms_Excluding_COVID.png",
-        "plots/Top_Terms_with_COVID.png"
+        "plots/Top_Terms_in_Each_Topic.png",
+        "plots/Topic_Trends_2019_2026.png"
     script:
         "scripts/LDA.R"
 

@@ -99,6 +99,7 @@ Logs for the data fetching process can be found in the `logs` directory, providi
 
 | Date       | Commit Message                                           |
 |------------|----------------------------------------------------------|
+| Nov 25, 2024 | Changes in article topics over time using LDA topic modelling |
 | Nov 25, 2024 | Upload SLURM file|
 | Nov 24, 2024 | Record tag: v2|
 | Nov 24, 2024 | Add comments and complete the user manual|
