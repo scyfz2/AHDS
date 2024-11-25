@@ -43,7 +43,7 @@ dtm <- data %>%
 
 # Running LDA model
 log_message("Running LDA model")
-lda_model <- LDA(dtm, k = 4, control = list(seed = 42))
+lda_model <- LDA(dtm, k = 4, control = list(seed = 18))
 topics <- posterior(lda_model)$topics
 data_with_topics <- data %>%
   mutate(topic = apply(topics, 1, which.max))  # Assigning dominant topic to each document
@@ -71,8 +71,8 @@ top_terms <- beta %>%
   ungroup() %>%
   arrange(topic, -beta)
 
-# Plotting with 'COVID'
-log_message("Plotting top terms with 'COVID'")
+# Plotting Topic Trends from 2019 to 2026
+log_message("Plotting Topic Trends from 2019 to 2026")
 gg <- ggplot(top_terms, aes(x = reorder(term, beta), y = beta, fill = as.factor(topic))) +
   geom_col(show.legend = FALSE) +
   facet_wrap(~topic, scales = "free") +
@@ -86,64 +86,42 @@ gg <- ggplot(top_terms, aes(x = reorder(term, beta), y = beta, fill = as.factor(
   theme_minimal() +
   theme(plot.title = element_text(hjust = 0.5))
 
-ggsave("plots/Top_Terms_with_COVID.png", width = 8, height = 6)
+ggsave("plots/Top_Terms_in_Each_Topic.png", width = 8, height = 6)
 
-# Repeat analysis excluding 'COVID'
-log_message("Repeating analysis excluding 'COVID'")
-custom_stop_words <- stop_words %>%
-  bind_rows(tibble(word = "covid", lexicon = "custom"))
+# Topic Trends from 2019 to 2026
+topic_distribution_by_year <- data_with_topics %>%
+  group_by(year, topic) %>%
+  summarise(count = n(), .groups = 'drop')
 
-data_filtered <- data %>%
-  mutate(document = row_number()) %>%
-  unnest_tokens(word, title) %>%
-  filter(!word %in% custom_stop_words$word) %>%
-  count(document, word) %>%
-  filter(n > 0)  # Ensuring documents with words exist
-dtm <- data_filtered %>%
-  cast_dtm(document, word, n)
+# Pivot data for easier plotting
+annual_topic_distribution <- topic_distribution_by_year %>%
+  pivot_wider(names_from = topic, values_from = count, values_fill = list(count = 0))
 
-# Running LDA model
-lda_model <- LDA(dtm, k = 4, control = list(seed = 42))
+annual_topic_distribution <- na.omit(annual_topic_distribution)
 
-# Extracting keywords for each topic
-log_message("Extracting keywords for each topic excluding 'COVID'")
-topics <- posterior(lda_model)$topics
-terms <- terms(lda_model, num_keywords)
-topic_keywords <- apply(terms, 2, paste, collapse = ", ")
+annual_topic_distribution <- annual_topic_distribution %>%
+  filter(year >= 2019 & year <= 2026)
 
-# Log and print top keywords in topics excluding 'COVID'
-log_message("Top Keywords in Topics (Excluding 'COVID'):")
-for (i in seq_along(topic_keywords)) {
-  keyword_log <- sprintf("Topic %d: %s", i, topic_keywords[i])
-  log_message(keyword_log)
-  cat(keyword_log, "\n")
-}
-
-# Extracting topic-word weights and plotting
-log_message("Extracting topic-word weights for plotting, excluding 'COVID'")
-beta <- tidy(lda_model, matrix = "beta")
-top_terms <- beta %>%
-  group_by(topic) %>%
-  top_n(num_keywords, beta) %>%
-  ungroup() %>%
-  arrange(topic, -beta)
-
-# Plotting excluding 'COVID'
-log_message("Plotting top terms excluding 'COVID'")
-gg <- ggplot(top_terms, aes(x = reorder(term, beta), y = beta, fill = as.factor(topic))) +
-  geom_col(show.legend = FALSE) +
-  facet_wrap(~topic, scales = "free") +
-  coord_flip() +
-  labs(
-    title = "Top Terms in Each Topic (Excluding 'COVID')",
-    x = "Terms",
-    y = "Beta (Importance)",
-    fill = "Topic"
-  ) +
+# Plotting topic trends over time with updated y-axis for article counts
+ggplot(annual_topic_distribution, aes(x = year)) +
+  geom_line(aes(y = `1`, colour = "Topic 1"), linewidth = 1.2) +
+  geom_line(aes(y = `2`, colour = "Topic 2"), linewidth = 1.2) +
+  geom_line(aes(y = `3`, colour = "Topic 3"), linewidth = 1.2) +
+  geom_line(aes(y = `4`, colour = "Topic 4"), linewidth = 1.2) +
+  scale_y_continuous(limits = c(0, max(annual_topic_distribution[, -1], na.rm = TRUE) * 1.1)) +
+  scale_x_continuous(breaks = 2019:2026, limits = c(2019, 2026)) +
+  scale_color_manual(values = c("Topic 1" = "#f8766d", "Topic 2" = "#7cae00", "Topic 3" = "#03bfc4", "Topic 4" = "#c77cff")) +
+  labs(title = "Topic Trends from 2019 to 2026",
+       x = "Year",
+       y = "Number of Articles",
+       colour = "Topics") +
   theme_minimal() +
-  theme(plot.title = element_text(hjust = 0.5))
+  theme(legend.position = "bottom", 
+        legend.title = element_blank(),
+        plot.title = element_text(hjust = 0.5))  # 设置标题居中
 
-ggsave("plots/Top_Terms_Excluding_COVID.png", width = 8, height = 6)
+# Save the plot
+ggsave("plots/Topic_Trends_2019_2026.png", width = 10, height = 6)
 
 # End logging
 log_message("---- LDA Analysis Completed ----")
